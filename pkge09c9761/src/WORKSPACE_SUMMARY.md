@@ -19,6 +19,15 @@ set), Tour mode, Pins directory with "add event", Crowd Pulse dashboard, Evacuat
 The Playwright browser is **not authenticated** here (all `/api/8/*` → 401), so pages were only layout-checked; data
 rendering in the UI is backend-verified only.
 
+## Git / deploy
+
+- Repo: `github.com/ashiqa/CMU-3DMap`, branch `main`. Root has `README.md` (PRD), `DEPLOY.md` (deploy + data load +
+  Gemini key steps), and a short workspace-only `.gitignore` (the user cleared the template one; this replacement excludes
+  `.vs-cache`, `gen/`, `.tmp/`, lock files, `node_modules`, `ui/content`, `.env`).
+- Connecting the repo wiped the untracked scratch: `.tmp/gen_data.py`, `gen_cuc.py` and their helpers, plus `.attachments/` (PRD, CUC PDFs).
+  Data now lives only in `data/` JSON; edit it directly.
+- Live counts (Nov 19 2026): CampusBuilding 74, Room 2315, Exit 9, CampusPin 50, CrowdZone 15, NavNode 3701, NavEdge 5302.
+
 ## Packages
 
 - `pkge09c9761` (main, only package). Deps: `mcpServer 8.10`, `testtools 8.12` (for TestApi). Platform v8.12.
