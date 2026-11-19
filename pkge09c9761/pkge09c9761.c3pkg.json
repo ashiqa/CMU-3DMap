@@ -1,0 +1,10 @@
+{
+  "author": "{{author}}",
+  "name": "pkge09c9761",
+  "description": "{{description}}",
+  "dependencies": {
+    "mcpServer": "8.10",
+    "testtools": "8.12"
+  },
+  "version": "1.0.0"
+}
