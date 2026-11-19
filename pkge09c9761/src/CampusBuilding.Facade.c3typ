@@ -1,0 +1,31 @@
+/**
+ * Dominant exterior material of a {@link CampusBuilding}, used to colour its 3D extrusion realistically.
+ * Assignments for the core campus are based on the buildings' well-known appearance; residences and
+ * peripheral buildings default to brick.
+ */
+enum type CampusBuilding.Facade {
+  /**
+   * Hornbostel-era buff Kittanning brick with red tile roofs (Baker, Porter, Doherty, Hamerschlag, CFA).
+   */
+  BUFF_BRICK = 'Buff brick'
+  /**
+   * Exposed concrete (Wean, Cyert, Warner).
+   */
+  CONCRETE = 'Concrete'
+  /**
+   * Glass curtain wall with metal panels (Gates-Hillman, Tepper, Scott, Ansys).
+   */
+  GLASS = 'Glass & metal'
+  /**
+   * Pale limestone or white cladding (Hunt Library, Mellon Institute, Mudge).
+   */
+  LIMESTONE = 'Limestone'
+  /**
+   * Light tan brick (Cohon Center, Newell-Simon, Purnell).
+   */
+  LIGHT_BRICK = 'Light brick'
+  /**
+   * Red or brown brick (most residence halls and Craig Street buildings).
+   */
+  RED_BRICK = 'Red brick'
+}

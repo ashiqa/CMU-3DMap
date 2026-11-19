@@ -1,0 +1,14 @@
+/**
+ * Outbound client for an OpenAI-compatible chat-completions endpoint. Configured for Google Gemini's
+ * OpenAI-compatible API by default; set the base URL and key once from the Console with
+ * `CampusPulse.Llm.setApiUrlAndAuth('https://generativelanguage.googleapis.com/v1beta/openai/', 'Bearer <key>')`.
+ * The key is stored as a secret in this type's RestConfig and never returned to callers.
+ */
+type CampusPulse.Llm mixes REST {
+  /**
+   * Posts a chat-completions request body (`model`, `messages`, `tools`, …) and returns the raw response so the
+   * caller can check the status code.
+   */
+  @rest(uri='chat/completions', method='POST', contentType='application/json')
+  chatCompletions: abstract function(body: json): HttpResponse
+}

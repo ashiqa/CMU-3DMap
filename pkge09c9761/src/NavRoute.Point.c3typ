@@ -1,0 +1,29 @@
+/**
+ * One vertex of a {@link NavRoute}.
+ */
+type NavRoute.Point {
+  /**
+   * Longitude.
+   */
+  lng: double
+  /**
+   * Latitude.
+   */
+  lat: double
+  /**
+   * Floor label when indoors.
+   */
+  floor: string
+  /**
+   * Building code when indoors or at a door.
+   */
+  buildingCode: string
+  /**
+   * True when the vertex is inside a building.
+   */
+  indoor: boolean
+  /**
+   * Id of the {@link NavNode} this vertex came from.
+   */
+  nodeId: string
+}

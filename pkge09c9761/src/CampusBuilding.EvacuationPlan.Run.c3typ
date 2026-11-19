@@ -1,0 +1,25 @@
+/**
+ * One assignment strategy evaluated by {@link CampusBuilding#planEvacuation}.
+ */
+type CampusBuilding.EvacuationPlan.Run {
+  /**
+   * Human-readable strategy name, e.g. "Nearest exit" or "Capacity-aware".
+   */
+  method: string
+  /**
+   * Seconds until the last synthetic occupant has passed an exit.
+   */
+  clearanceSec: double
+  /**
+   * Share of occupants sent through the busiest exit (0–1).
+   */
+  maxExitFraction: double
+  /**
+   * Load on every exit.
+   */
+  exitLoads: [CampusBuilding.EvacuationPlan.ExitLoad]
+  /**
+   * Which exit each cluster was sent to.
+   */
+  assignments: [CampusBuilding.EvacuationPlan.Assignment]
+}

@@ -1,0 +1,89 @@
+/**
+ * A place whose crowding is simulated and forecast: a library floor, a building, a dining hall, or a quad. Each zone
+ * carries a typical-day occupancy profile and sensitivities that the scenario ({@link CampusPulse.Scenario})
+ * modulates. All occupancy values are simulated and the UI labels them as such.
+ */
+@db(index=['building', 'kind', 'studySpace'])
+entity type CrowdZone {
+  /**
+   * Display name, e.g. "Sorrells Library".
+   */
+  name: !string
+  /**
+   * Category of place; selects the default profile shape and recommendation peers.
+   */
+  kind: !string enum CrowdZone.Kind
+  /**
+   * Longitude of the zone centre, used for the crowd halo and walking-time estimates.
+   */
+  lng: !double
+  /**
+   * Latitude of the zone centre.
+   */
+  lat: !double
+  /**
+   * Building the zone sits in, when it is indoors.
+   */
+  building: CampusBuilding
+  /**
+   * Floor label when the zone is one floor of a building, e.g. `4` for Sorrells in Wean.
+   */
+  floor: string
+  /**
+   * Assumed number of people at 100%.
+   */
+  capacity: !int
+  /**
+   * True when the zone is inside a building (rain raises it); quads leave it unset.
+   */
+  indoor: boolean
+  /**
+   * True when students study here; makes the zone a candidate in {@link CrowdZone#recommend}.
+   */
+  studySpace: boolean
+  /**
+   * Twenty-four hourly occupancy fractions (0–1) for a typical dry weekday, hour 0 first.
+   */
+  baseProfile: [double]
+  /**
+   * Occupancy fraction added when it rains (negative for outdoor zones).
+   */
+  rainSensitivity: double
+  /**
+   * Occupancy fraction added when a large event is nearby.
+   */
+  eventSensitivity: double
+  /**
+   * Occupancy fraction added during exam week.
+   */
+  examSensitivity: double
+  /**
+   * Scale of the class-change bumps (0–1).
+   */
+  classChangeSensitivity: double
+  /**
+   * Amenity tags used for similarity in recommendations, e.g. `quiet`, `group`, `outlets`, `cafe`.
+   */
+  amenities: [string]
+  /**
+   * Provenance of the capacity and profile (always synthetic in this prototype).
+   */
+  dataStatus: !string enum CampusPulse.DataStatus
+
+  /**
+   * Simulates the current occupancy of every zone under `scenario`. Called every few seconds by the crowd layer.
+   */
+  simulate: function(scenario: !CampusPulse.Scenario): [CrowdZone.State] js
+
+  /**
+   * Forecasts this zone's occupancy over the next `horizonMin` minutes (default 180) in 10-minute steps, with a
+   * scenario range band, the time it reaches capacity, and the drivers behind the peak.
+   */
+  forecast: member function(scenario: !CampusPulse.Scenario, horizonMin: int): CrowdZone.Forecast js
+
+  /**
+   * Ranks alternative places to this zone by predicted crowding, walking time, and amenity similarity, and
+   * explains the top pick in one sentence.
+   */
+  recommend: member function(scenario: !CampusPulse.Scenario): CrowdZone.Recommendation js
+}

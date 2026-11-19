@@ -1,0 +1,644 @@
+[
+ {
+  "id": "ne_j_fence__j_mall_e",
+  "fromNode": "nn_j_fence",
+  "toNode": "nn_j_mall_e",
+  "lengthM": 79.7,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_mall_e__j_mall_c",
+  "fromNode": "nn_j_mall_e",
+  "toNode": "nn_j_mall_c",
+  "lengthM": 85.4,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_mall_c__j_mall_w",
+  "fromNode": "nn_j_mall_c",
+  "toNode": "nn_j_mall_w",
+  "lengthM": 93.3,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_mall_w__j_hh_plaza",
+  "fromNode": "nn_j_mall_w",
+  "toNode": "nn_j_hh_plaza",
+  "lengthM": 69.7,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_fence__j_cut_mid",
+  "fromNode": "nn_j_fence",
+  "toNode": "nn_j_cut_mid",
+  "lengthM": 52.8,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_cut_mid__j_cut_n",
+  "fromNode": "nn_j_cut_mid",
+  "toNode": "nn_j_cut_n",
+  "lengthM": 79.7,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_cut_n__j_forbes_tep",
+  "fromNode": "nn_j_cut_n",
+  "toNode": "nn_j_forbes_tep",
+  "lengthM": 118.5,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_cut_mid__j_cuc_w",
+  "fromNode": "nn_j_cut_mid",
+  "toNode": "nn_j_cuc_w",
+  "lengthM": 93.7,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_mall_e__j_cfa_front",
+  "fromNode": "nn_j_mall_e",
+  "toNode": "nn_j_cfa_front",
+  "lengthM": 87.5,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_cfa_front__j_posner_path",
+  "fromNode": "nn_j_cfa_front",
+  "toNode": "nn_j_posner_path",
+  "lengthM": 84.8,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_fence__j_weh_dh_n",
+  "fromNode": "nn_j_fence",
+  "toNode": "nn_j_weh_dh_n",
+  "lengthM": 102.9,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_weh_dh_n__j_nsh_w",
+  "fromNode": "nn_j_weh_dh_n",
+  "toNode": "nn_j_nsh_w",
+  "lengthM": 101.6,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_nsh_w__j_hh_plaza",
+  "fromNode": "nn_j_nsh_w",
+  "toNode": "nn_j_hh_plaza",
+  "lengthM": 102.3,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_ghc_n_plaza__j_hbh_plaza",
+  "fromNode": "nn_j_ghc_n_plaza",
+  "toNode": "nn_j_hbh_plaza",
+  "lengthM": 98.9,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_hbh_plaza__j_nsh_w",
+  "fromNode": "nn_j_hbh_plaza",
+  "toNode": "nn_j_nsh_w",
+  "lengthM": 95.2,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_ghc_n_plaza__j_forbes_tep",
+  "fromNode": "nn_j_ghc_n_plaza",
+  "toNode": "nn_j_forbes_tep",
+  "lengthM": 56.1,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_cut_n__j_ghc_n_plaza",
+  "fromNode": "nn_j_cut_n",
+  "toNode": "nn_j_ghc_n_plaza",
+  "lengthM": 77.0,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_cfa_front__j_cuc_w",
+  "fromNode": "nn_j_cfa_front",
+  "toNode": "nn_j_cuc_w",
+  "lengthM": 161.5,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_j_cuc_w__j_posner_path",
+  "fromNode": "nn_j_cuc_w",
+  "toNode": "nn_j_posner_path",
+  "lengthM": 183.4,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_DH_50__j_mall_e",
+  "fromNode": "nn_door_DH_50",
+  "toNode": "nn_j_mall_e",
+  "lengthM": 42.0,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_DH_50__j_mall_c",
+  "fromNode": "nn_door_DH_50",
+  "toNode": "nn_j_mall_c",
+  "lengthM": 44.5,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_DH_910__j_fence",
+  "fromNode": "nn_door_DH_910",
+  "toNode": "nn_j_fence",
+  "lengthM": 16.6,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_BH_510__j_mall_c",
+  "fromNode": "nn_door_BH_510",
+  "toNode": "nn_j_mall_c",
+  "lengthM": 17.4,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_PH_510__j_mall_w",
+  "fromNode": "nn_door_PH_510",
+  "toNode": "nn_j_mall_w",
+  "lengthM": 22.2,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_NSH_510__j_hbh_plaza",
+  "fromNode": "nn_door_NSH_510",
+  "toNode": "nn_j_hbh_plaza",
+  "lengthM": 21.4,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_NSH_05__j_nsh_w",
+  "fromNode": "nn_door_NSH_05",
+  "toNode": "nn_j_nsh_w",
+  "lengthM": 61.7,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_CUC_04__j_cuc_w",
+  "fromNode": "nn_door_CUC_04",
+  "toNode": "nn_j_cuc_w",
+  "lengthM": 12.1,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_PCA_05__j_cut_mid",
+  "fromNode": "nn_door_PCA_05",
+  "toNode": "nn_j_cut_mid",
+  "lengthM": 26.1,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_CFA_510__j_cfa_front",
+  "fromNode": "nn_door_CFA_510",
+  "toNode": "nn_j_cfa_front",
+  "lengthM": 7.5,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_HH_105__j_hh_plaza",
+  "fromNode": "nn_door_HH_105",
+  "toNode": "nn_j_hh_plaza",
+  "lengthM": 54.5,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_TEP_50__j_forbes_tep",
+  "fromNode": "nn_door_TEP_50",
+  "toNode": "nn_j_forbes_tep",
+  "lengthM": 33.8,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_POS_510__j_posner_path",
+  "fromNode": "nn_door_POS_510",
+  "toNode": "nn_j_posner_path",
+  "lengthM": 33.6,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_MM_05__j_posner_path",
+  "fromNode": "nn_door_MM_05",
+  "toNode": "nn_j_posner_path",
+  "lengthM": 39.5,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_HBH_50__j_hbh_plaza",
+  "fromNode": "nn_door_HBH_50",
+  "toNode": "nn_j_hbh_plaza",
+  "lengthM": 22.3,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_WH_50__j_cut_n",
+  "fromNode": "nn_door_WH_50",
+  "toNode": "nn_j_cut_n",
+  "lengthM": 34.7,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_CYH_50__j_cut_n",
+  "fromNode": "nn_door_CYH_50",
+  "toNode": "nn_j_cut_n",
+  "lengthM": 15.3,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_SC_105__j_nsh_w",
+  "fromNode": "nn_door_SC_105",
+  "toNode": "nn_j_nsh_w",
+  "lengthM": 19.6,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_HL_N__j_mall_e",
+  "fromNode": "nn_door_HL_N",
+  "toNode": "nn_j_mall_e",
+  "lengthM": 97.1,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_HL_N__j_cfa_front",
+  "fromNode": "nn_door_HL_N",
+  "toNode": "nn_j_cfa_front",
+  "lengthM": 101.0,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_WEH_S__j_mall_c",
+  "fromNode": "nn_door_WEH_S",
+  "toNode": "nn_j_mall_c",
+  "lengthM": 105.0,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_WEH_S__j_mall_w",
+  "fromNode": "nn_door_WEH_S",
+  "toNode": "nn_j_mall_w",
+  "lengthM": 56.9,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_WEH_N__j_weh_dh_n",
+  "fromNode": "nn_door_WEH_N",
+  "toNode": "nn_j_weh_dh_n",
+  "lengthM": 68.6,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_WEH_W__j_nsh_w",
+  "fromNode": "nn_door_WEH_W",
+  "toNode": "nn_j_nsh_w",
+  "lengthM": 42.3,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_WEH_W__j_hh_plaza",
+  "fromNode": "nn_door_WEH_W",
+  "toNode": "nn_j_hh_plaza",
+  "lengthM": 60.5,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_GHC_4_lobby__GHC_4_c_lobby",
+  "fromNode": "nn_GHC_4_lobby",
+  "toNode": "nn_GHC_4_c_lobby",
+  "lengthM": 25.5,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_elev__GHC_4_c_elev",
+  "fromNode": "nn_GHC_4_elev",
+  "toNode": "nn_GHC_4_c_elev",
+  "lengthM": 7.7,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_stairs__GHC_4_c_stairs",
+  "fromNode": "nn_GHC_4_stairs",
+  "toNode": "nn_GHC_4_c_stairs",
+  "lengthM": 7.7,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_helix__GHC_4_c_helix",
+  "fromNode": "nn_GHC_4_helix",
+  "toNode": "nn_GHC_4_c_helix",
+  "lengthM": 15.4,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_commons__GHC_4_c_commons",
+  "fromNode": "nn_GHC_4_commons",
+  "toNode": "nn_GHC_4_c_commons",
+  "lengthM": 24.1,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_rr__GHC_4_c_rr",
+  "fromNode": "nn_GHC_4_rr",
+  "toNode": "nn_GHC_4_c_rr",
+  "lengthM": 11.1,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_cafe__GHC_4_c_cafe",
+  "fromNode": "nn_GHC_4_cafe",
+  "toNode": "nn_GHC_4_c_cafe",
+  "lengthM": 31.3,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_lecture__GHC_4_c_lecture",
+  "fromNode": "nn_GHC_4_lecture",
+  "toNode": "nn_GHC_4_c_lecture",
+  "lengthM": 24.1,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_print__GHC_4_c_print",
+  "fromNode": "nn_GHC_4_print",
+  "toNode": "nn_GHC_4_c_print",
+  "lengthM": 9.6,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_door_GHC_E__GHC_4_c_doorE",
+  "fromNode": "nn_door_GHC_E",
+  "toNode": "nn_GHC_4_c_doorE",
+  "lengthM": 48.1,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_door_GHC_E__j_cut_mid",
+  "fromNode": "nn_door_GHC_E",
+  "toNode": "nn_j_cut_mid",
+  "lengthM": 24.2,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_GHC_N__GHC_4_c_doorN",
+  "fromNode": "nn_door_GHC_N",
+  "toNode": "nn_GHC_4_c_doorN",
+  "lengthM": 10.7,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_door_GHC_N__j_ghc_n_plaza",
+  "fromNode": "nn_door_GHC_N",
+  "toNode": "nn_j_ghc_n_plaza",
+  "lengthM": 8.2,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_door_GHC_S__GHC_4_c_doorS",
+  "fromNode": "nn_door_GHC_S",
+  "toNode": "nn_GHC_4_c_doorS",
+  "lengthM": 10.7,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_door_GHC_S__j_weh_dh_n",
+  "fromNode": "nn_door_GHC_S",
+  "toNode": "nn_j_weh_dh_n",
+  "lengthM": 30.8,
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "ne_GHC_4_c_doorS__GHC_4_c_print",
+  "fromNode": "nn_GHC_4_c_doorS",
+  "toNode": "nn_GHC_4_c_print",
+  "lengthM": 5.3,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_c_print__GHC_4_c_lecture",
+  "fromNode": "nn_GHC_4_c_print",
+  "toNode": "nn_GHC_4_c_lecture",
+  "lengthM": 1.6,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_c_lecture__GHC_4_c_doorE",
+  "fromNode": "nn_GHC_4_c_lecture",
+  "toNode": "nn_GHC_4_c_doorE",
+  "lengthM": 30.4,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_c_doorE__GHC_4_c_lobby",
+  "fromNode": "nn_GHC_4_c_doorE",
+  "toNode": "nn_GHC_4_c_lobby",
+  "lengthM": 1.0,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_c_lobby__GHC_4_c_elev",
+  "fromNode": "nn_GHC_4_c_lobby",
+  "toNode": "nn_GHC_4_c_elev",
+  "lengthM": 5.3,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_c_elev__GHC_4_c_helix",
+  "fromNode": "nn_GHC_4_c_elev",
+  "toNode": "nn_GHC_4_c_helix",
+  "lengthM": 1.0,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_c_helix__GHC_4_c_stairs",
+  "fromNode": "nn_GHC_4_c_helix",
+  "toNode": "nn_GHC_4_c_stairs",
+  "lengthM": 18.1,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_c_stairs__GHC_4_c_commons",
+  "fromNode": "nn_GHC_4_c_stairs",
+  "toNode": "nn_GHC_4_c_commons",
+  "lengthM": 17.6,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_c_commons__GHC_4_c_cafe",
+  "fromNode": "nn_GHC_4_c_commons",
+  "toNode": "nn_GHC_4_c_cafe",
+  "lengthM": 1.6,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_c_cafe__GHC_4_c_rr",
+  "fromNode": "nn_GHC_4_c_cafe",
+  "toNode": "nn_GHC_4_c_rr",
+  "lengthM": 1.0,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_c_rr__GHC_4_c_doorN",
+  "fromNode": "nn_GHC_4_c_rr",
+  "toNode": "nn_GHC_4_c_doorN",
+  "lengthM": 5.3,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_5_clsA__GHC_5_c_clsA",
+  "fromNode": "nn_GHC_5_clsA",
+  "toNode": "nn_GHC_5_c_clsA",
+  "lengthM": 31.3,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_5_clsB__GHC_5_c_clsB",
+  "fromNode": "nn_GHC_5_clsB",
+  "toNode": "nn_GHC_5_c_clsB",
+  "lengthM": 31.3,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_5_elev__GHC_5_c_elev",
+  "fromNode": "nn_GHC_5_elev",
+  "toNode": "nn_GHC_5_c_elev",
+  "lengthM": 7.7,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_5_stairs__GHC_5_c_stairs",
+  "fromNode": "nn_GHC_5_stairs",
+  "toNode": "nn_GHC_5_c_stairs",
+  "lengthM": 7.7,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_5_helix__GHC_5_c_helix",
+  "fromNode": "nn_GHC_5_helix",
+  "toNode": "nn_GHC_5_c_helix",
+  "lengthM": 15.4,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_5_rr__GHC_5_c_rr",
+  "fromNode": "nn_GHC_5_rr",
+  "toNode": "nn_GHC_5_c_rr",
+  "lengthM": 11.1,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_5_lounge__GHC_5_c_lounge",
+  "fromNode": "nn_GHC_5_lounge",
+  "toNode": "nn_GHC_5_c_lounge",
+  "lengthM": 24.1,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_5_c_clsB__GHC_5_c_lounge",
+  "fromNode": "nn_GHC_5_c_clsB",
+  "toNode": "nn_GHC_5_c_lounge",
+  "lengthM": 30.4,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_5_c_lounge__GHC_5_c_elev",
+  "fromNode": "nn_GHC_5_c_lounge",
+  "toNode": "nn_GHC_5_c_elev",
+  "lengthM": 5.3,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_5_c_elev__GHC_5_c_helix",
+  "fromNode": "nn_GHC_5_c_elev",
+  "toNode": "nn_GHC_5_c_helix",
+  "lengthM": 1.0,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_5_c_helix__GHC_5_c_stairs",
+  "fromNode": "nn_GHC_5_c_helix",
+  "toNode": "nn_GHC_5_c_stairs",
+  "lengthM": 18.1,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_5_c_stairs__GHC_5_c_clsA",
+  "fromNode": "nn_GHC_5_c_stairs",
+  "toNode": "nn_GHC_5_c_clsA",
+  "lengthM": 17.6,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_5_c_clsA__GHC_5_c_rr",
+  "fromNode": "nn_GHC_5_c_clsA",
+  "toNode": "nn_GHC_5_c_rr",
+  "lengthM": 1.6,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_elev__GHC_5_elev",
+  "fromNode": "nn_GHC_4_elev",
+  "toNode": "nn_GHC_5_elev",
+  "lengthM": 12,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ },
+ {
+  "id": "ne_GHC_4_stairs__GHC_5_stairs",
+  "fromNode": "nn_GHC_4_stairs",
+  "toNode": "nn_GHC_5_stairs",
+  "lengthM": 12,
+  "dataStatus": "Synthetic",
+  "indoor": true,
+  "hasSteps": true
+ },
+ {
+  "id": "ne_GHC_4_helix__GHC_5_helix",
+  "fromNode": "nn_GHC_4_helix",
+  "toNode": "nn_GHC_5_helix",
+  "lengthM": 12,
+  "dataStatus": "Synthetic",
+  "indoor": true
+ }
+]

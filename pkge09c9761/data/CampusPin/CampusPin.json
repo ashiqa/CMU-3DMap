@@ -1,0 +1,649 @@
+[
+ {
+  "id": "pin_food_pizza_cuc",
+  "kind": "Food",
+  "name": "Free pizza \u2014 Rangos foyer",
+  "details": "Leftover from a club meeting. Three boxes of cheese and pepperoni, first come first served.",
+  "tags": [
+   "pizza",
+   "free food",
+   "vegetarian"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.9421261,
+  "lat": 40.4433465,
+  "building": "bldg_CUC",
+  "photos": [
+   "https://picsum.photos/seed/pizza1/480/300",
+   "https://picsum.photos/seed/pizza2/480/300"
+  ],
+  "demoStartOffsetMin": -12,
+  "demoDurationMin": 37,
+  "startsAt": "2026-11-17T18:10:56.000Z",
+  "expiresAt": "2026-11-17T18:47:56.000Z",
+  "floor": "2"
+ },
+ {
+  "id": "pin_food_bagels_ghc",
+  "kind": "Food",
+  "name": "Leftover bagels \u2014 Gates 4F lobby",
+  "details": "Two dozen bagels and cream cheese on the table by the windows.",
+  "tags": [
+   "bagels",
+   "free food",
+   "breakfast"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "4",
+  "lng": -79.9443492,
+  "lat": 40.4435086,
+  "building": "bldg_GHC",
+  "photos": [
+   "https://picsum.photos/seed/bagels1/480/300"
+  ],
+  "demoStartOffsetMin": -40,
+  "demoDurationMin": 50,
+  "startsAt": "2026-11-17T17:42:56.000Z",
+  "expiresAt": "2026-11-17T18:32:56.000Z"
+ },
+ {
+  "id": "pin_food_coffee_tep",
+  "kind": "Food",
+  "name": "Free coffee & donuts \u2014 Tepper atrium",
+  "details": "Sponsored study break. Starts soon; usually gone in an hour.",
+  "tags": [
+   "coffee",
+   "donuts",
+   "free food"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.945369,
+  "lat": 40.4450376,
+  "building": "bldg_TEP",
+  "photos": [
+   "https://picsum.photos/seed/coffee1/480/300"
+  ],
+  "demoStartOffsetMin": 25,
+  "demoDurationMin": 60,
+  "startsAt": "2026-11-17T18:47:56.000Z",
+  "expiresAt": "2026-11-17T19:47:56.000Z",
+  "floor": "1"
+ },
+ {
+  "id": "pin_food_boba_hl",
+  "kind": "Food",
+  "name": "Boba giveaway \u2014 Hunt Library lobby",
+  "details": "Taiwanese Student Association is handing out milk tea near the entrance.",
+  "tags": [
+   "boba",
+   "free food",
+   "drinks"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "1",
+  "lng": -79.9438171,
+  "lat": 40.4411574,
+  "building": "bldg_HL",
+  "photos": [
+   "https://picsum.photos/seed/boba1/480/300"
+  ],
+  "demoStartOffsetMin": -5,
+  "demoDurationMin": 45,
+  "startsAt": "2026-11-17T18:17:56.000Z",
+  "expiresAt": "2026-11-17T19:02:56.000Z"
+ },
+ {
+  "id": "pin_food_snacks_dh",
+  "kind": "Food",
+  "name": "Snack table \u2014 Doherty 2F",
+  "details": "Granola bars and fruit outside the seminar room.",
+  "tags": [
+   "snacks",
+   "free food"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.9444955,
+  "lat": 40.4425176,
+  "building": "bldg_DH",
+  "demoStartOffsetMin": -70,
+  "demoDurationMin": 90,
+  "startsAt": "2026-11-17T17:12:56.000Z",
+  "expiresAt": "2026-11-17T18:42:56.000Z",
+  "floor": "2"
+ },
+ {
+  "id": "pin_evt_robotics_nsh",
+  "kind": "Event",
+  "name": "Robotics Club Demo Day",
+  "details": "Student teams demo quadrupeds, a drone swarm, and a RoboCup striker in the atrium.",
+  "tags": [
+   "robotics",
+   "robots",
+   "drones",
+   "demo",
+   "engineering"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.9458562,
+  "lat": 40.4434143,
+  "building": "bldg_NSH",
+  "photos": [
+   "https://picsum.photos/seed/robot1/480/300",
+   "https://picsum.photos/seed/robot2/480/300",
+   "https://picsum.photos/seed/robot3/480/300"
+  ],
+  "demoStartOffsetMin": 60,
+  "demoDurationMin": 120,
+  "startsAt": "2026-11-17T19:22:56.000Z",
+  "expiresAt": "2026-11-17T21:22:56.000Z",
+  "floor": "1"
+ },
+ {
+  "id": "pin_evt_drone_ghc",
+  "kind": "Event",
+  "name": "Autonomous Drone Showcase",
+  "details": "Autonomy lab flies indoor drones through a gate course; Q&A afterwards.",
+  "tags": [
+   "robotics",
+   "drone",
+   "autonomous",
+   "ai"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "4",
+  "lng": -79.9443492,
+  "lat": 40.4435086,
+  "building": "bldg_GHC",
+  "photos": [
+   "https://picsum.photos/seed/drone1/480/300",
+   "https://picsum.photos/seed/drone2/480/300"
+  ],
+  "demoStartOffsetMin": 180,
+  "demoDurationMin": 90,
+  "startsAt": "2026-11-17T21:22:56.000Z",
+  "expiresAt": "2026-11-17T22:52:56.000Z"
+ },
+ {
+  "id": "pin_evt_film_cfa",
+  "kind": "Event",
+  "name": "AI Film Night",
+  "details": "Short films made with generative tools, followed by a panel.",
+  "tags": [
+   "ai",
+   "film",
+   "art",
+   "generative"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.9429117,
+  "lat": 40.4415669,
+  "building": "bldg_CFA",
+  "photos": [
+   "https://picsum.photos/seed/film1/480/300",
+   "https://picsum.photos/seed/film2/480/300"
+  ],
+  "demoStartOffsetMin": 300,
+  "demoDurationMin": 150,
+  "startsAt": "2026-11-17T23:22:56.000Z",
+  "expiresAt": "2026-11-18T01:52:56.000Z",
+  "floor": "1"
+ },
+ {
+  "id": "pin_evt_jazz_cut",
+  "kind": "Event",
+  "name": "Jazz on the Cut",
+  "details": "Student jazz combo on the lawn; bring a blanket. Cancelled if it rains.",
+  "tags": [
+   "music",
+   "jazz",
+   "outdoor",
+   "concert"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.94395,
+  "lat": 40.44335,
+  "photos": [
+   "https://picsum.photos/seed/jazz1/480/300",
+   "https://picsum.photos/seed/jazz2/480/300"
+  ],
+  "demoStartOffsetMin": 120,
+  "demoDurationMin": 90,
+  "startsAt": "2026-11-17T20:22:56.000Z",
+  "expiresAt": "2026-11-17T21:52:56.000Z"
+ },
+ {
+  "id": "pin_evt_career_cuc",
+  "kind": "Event",
+  "name": "Startup Career Fair",
+  "details": "Forty early-stage companies recruiting interns and new grads in Rangos.",
+  "tags": [
+   "career",
+   "recruiting",
+   "startup",
+   "jobs"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.9421013,
+  "lat": 40.4435471,
+  "building": "bldg_CUC",
+  "photos": [
+   "https://picsum.photos/seed/career1/480/300",
+   "https://picsum.photos/seed/career2/480/300"
+  ],
+  "demoStartOffsetMin": 30,
+  "demoDurationMin": 180,
+  "startsAt": "2026-11-17T18:52:56.000Z",
+  "expiresAt": "2026-11-17T21:52:56.000Z",
+  "floor": "2"
+ },
+ {
+  "id": "pin_evt_hack_tep",
+  "kind": "Event",
+  "name": "Hackathon Kickoff: C3 AI Campus Challenge",
+  "details": "Teams form, judges explain the rubric, and the build clock starts.",
+  "tags": [
+   "hackathon",
+   "ai",
+   "c3",
+   "build"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.945369,
+  "lat": 40.4452232,
+  "building": "bldg_TEP",
+  "photos": [
+   "https://picsum.photos/seed/hack1/480/300",
+   "https://picsum.photos/seed/hack2/480/300"
+  ],
+  "demoStartOffsetMin": 90,
+  "demoDurationMin": 120,
+  "startsAt": "2026-11-17T19:52:56.000Z",
+  "expiresAt": "2026-11-17T21:52:56.000Z",
+  "floor": "2"
+ },
+ {
+  "id": "pin_evt_dogs_hl",
+  "kind": "Event",
+  "name": "Scotty Dog Study Break",
+  "details": "Therapy dogs visit the library lobby. Free stress balls.",
+  "tags": [
+   "wellness",
+   "dogs",
+   "study break",
+   "therapy"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "1",
+  "lng": -79.9438171,
+  "lat": 40.4411574,
+  "building": "bldg_HL",
+  "photos": [
+   "https://picsum.photos/seed/dogs1/480/300",
+   "https://picsum.photos/seed/dogs2/480/300"
+  ],
+  "demoStartOffsetMin": 45,
+  "demoDurationMin": 90,
+  "startsAt": "2026-11-17T19:07:56.000Z",
+  "expiresAt": "2026-11-17T20:37:56.000Z"
+ },
+ {
+  "id": "pin_evt_buggy_hh",
+  "kind": "Event",
+  "name": "Buggy Design Open House",
+  "details": "See this year's carbon-fibre buggies and talk to the push teams.",
+  "tags": [
+   "buggy",
+   "engineering",
+   "robotics",
+   "carnival"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.946724,
+  "lat": 40.4424119,
+  "building": "bldg_HH",
+  "photos": [
+   "https://picsum.photos/seed/buggy1/480/300",
+   "https://picsum.photos/seed/buggy2/480/300"
+  ],
+  "demoStartOffsetMin": 240,
+  "demoDurationMin": 120,
+  "startsAt": "2026-11-17T22:22:56.000Z",
+  "expiresAt": "2026-11-18T00:22:56.000Z",
+  "floor": "1"
+ },
+ {
+  "id": "pin_bath_hl2",
+  "kind": "Bathroom",
+  "name": "Gender-neutral restroom \u2014 Hunt 2F",
+  "details": "Near the elevators on the second floor. Step-free from the lobby elevator.",
+  "tags": [
+   "gender-neutral",
+   "step-free"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "2",
+  "lng": -79.9439717,
+  "lat": 40.4412336,
+  "building": "bldg_HL"
+ },
+ {
+  "id": "pin_bath_hl1",
+  "kind": "Bathroom",
+  "name": "Restroom \u2014 Hunt 1F",
+  "details": "Ground-floor restroom past the print station.",
+  "tags": [
+   "step-free"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "1",
+  "lng": -79.9439198,
+  "lat": 40.4410466,
+  "building": "bldg_HL"
+ },
+ {
+  "id": "pin_bath_hl4",
+  "kind": "Bathroom",
+  "name": "Restroom \u2014 Hunt 4F",
+  "details": "Fourth-floor restroom beside the seminar room.",
+  "tags": [
+   "step-free"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "4",
+  "lng": -79.9435959,
+  "lat": 40.4412332,
+  "building": "bldg_HL"
+ },
+ {
+  "id": "pin_bath_weh4",
+  "kind": "Bathroom",
+  "name": "Restroom \u2014 Wean 4F (near Sorrells)",
+  "details": "Across the corridor from the Sorrells entrance.",
+  "tags": [
+   "step-free"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "4",
+  "lng": -79.9458273,
+  "lat": 40.4427746,
+  "building": "bldg_WEH"
+ },
+ {
+  "id": "pin_bath_weh5",
+  "kind": "Bathroom",
+  "name": "Restroom \u2014 Wean 5F",
+  "details": "Mall-level restroom east of the lobby.",
+  "tags": [
+   "step-free"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "5",
+  "lng": -79.9458425,
+  "lat": 40.4427898,
+  "building": "bldg_WEH"
+ },
+ {
+  "id": "pin_bath_ghc4",
+  "kind": "Bathroom",
+  "name": "Gender-neutral restroom \u2014 Gates 4F",
+  "details": "North of the lobby, past the stairs.",
+  "tags": [
+   "gender-neutral",
+   "step-free"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "4",
+  "lng": -79.9445199,
+  "lat": 40.4438927,
+  "building": "bldg_GHC"
+ },
+ {
+  "id": "pin_bath_ghc5",
+  "kind": "Bathroom",
+  "name": "Restroom \u2014 Gates 5F",
+  "details": "Fifth floor, next to the offices.",
+  "tags": [
+   "step-free"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "5",
+  "lng": -79.9445199,
+  "lat": 40.4438927,
+  "building": "bldg_GHC"
+ },
+ {
+  "id": "pin_bath_dh2",
+  "kind": "Bathroom",
+  "name": "Restroom \u2014 Doherty 2F",
+  "details": "Second floor, west wing.",
+  "tags": [],
+  "dataStatus": "Synthetic",
+  "lng": -79.9447464,
+  "lat": 40.4425176,
+  "building": "bldg_DH",
+  "floor": "2"
+ },
+ {
+  "id": "pin_bath_tep1",
+  "kind": "Bathroom",
+  "name": "Restroom \u2014 Tepper 1F",
+  "details": "Off the atrium.",
+  "tags": [
+   "step-free",
+   "gender-neutral"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.945699,
+  "lat": 40.4450376,
+  "building": "bldg_TEP",
+  "floor": "1"
+ },
+ {
+  "id": "pin_print_hl1",
+  "kind": "Printer",
+  "name": "Print station \u2014 Hunt 1F",
+  "details": "Colour and black-and-white; release with your ID card.",
+  "tags": [
+   "color",
+   "b&w",
+   "scan"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "1",
+  "lng": -79.9439152,
+  "lat": 40.4409909,
+  "building": "bldg_HL"
+ },
+ {
+  "id": "pin_print_hl2",
+  "kind": "Printer",
+  "name": "Print station \u2014 Hunt 2F",
+  "details": "Black-and-white only.",
+  "tags": [
+   "b&w"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "2",
+  "lng": -79.9438295,
+  "lat": 40.4410644,
+  "building": "bldg_HL"
+ },
+ {
+  "id": "pin_print_weh5",
+  "kind": "Printer",
+  "name": "Cluster printer \u2014 Wean 5F",
+  "details": "Black-and-white, usually quiet in the afternoon.",
+  "tags": [
+   "b&w"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "5",
+  "lng": -79.9458853,
+  "lat": 40.442624,
+  "building": "bldg_WEH"
+ },
+ {
+  "id": "pin_print_ghc4",
+  "kind": "Printer",
+  "name": "Cluster printer \u2014 Gates 4F",
+  "details": "Colour printer near the lecture hall.",
+  "tags": [
+   "color",
+   "b&w"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "4",
+  "lng": -79.9445369,
+  "lat": 40.4432205,
+  "building": "bldg_GHC"
+ },
+ {
+  "id": "pin_print_cuc2",
+  "kind": "Printer",
+  "name": "Print kiosk \u2014 Cohon Center 2F",
+  "details": "Colour kiosk by the study nook.",
+  "tags": [
+   "color"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.9419849,
+  "lat": 40.4433346,
+  "building": "bldg_CUC",
+  "floor": "2"
+ },
+ {
+  "id": "pin_print_tep2",
+  "kind": "Printer",
+  "name": "Printer \u2014 Tepper 2F",
+  "details": "Black-and-white near the lounge.",
+  "tags": [
+   "b&w"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.945204,
+  "lat": 40.4452232,
+  "building": "bldg_TEP",
+  "floor": "2"
+ },
+ {
+  "id": "pin_print_bh2",
+  "kind": "Printer",
+  "name": "Printer \u2014 Baker Hall 2F",
+  "details": "Black-and-white outside the reading room.",
+  "tags": [
+   "b&w"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.9450187,
+  "lat": 40.4415176,
+  "building": "bldg_BH",
+  "floor": "2"
+ },
+ {
+  "id": "pin_study_sorrells",
+  "kind": "Study space",
+  "name": "Sorrells Library",
+  "details": "Engineering & Science library on the 4th floor of Wean Hall. Quiet study with outlets.",
+  "tags": [
+   "quiet",
+   "outlets",
+   "library"
+  ],
+  "dataStatus": "Verified",
+  "floor": "4",
+  "lng": -79.9456434,
+  "lat": 40.4425244,
+  "building": "bldg_WEH"
+ },
+ {
+  "id": "pin_study_hl4",
+  "kind": "Study space",
+  "name": "Hunt Library 4F study commons",
+  "details": "Open tables and quiet corners.",
+  "tags": [
+   "quiet",
+   "outlets"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "4",
+  "lng": -79.9437652,
+  "lat": 40.4411987,
+  "building": "bldg_HL"
+ },
+ {
+  "id": "pin_study_hl2",
+  "kind": "Study space",
+  "name": "Hunt Library 2F group study",
+  "details": "Bookable group rooms with whiteboards.",
+  "tags": [
+   "group",
+   "whiteboards"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "2",
+  "lng": -79.9440525,
+  "lat": 40.4411231,
+  "building": "bldg_HL"
+ },
+ {
+  "id": "pin_study_tep",
+  "kind": "Study space",
+  "name": "Tepper Quad study lounge",
+  "details": "Bright lounge above the atrium with a caf\u00e9 nearby.",
+  "tags": [
+   "group",
+   "outlets",
+   "cafe"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.945369,
+  "lat": 40.4452232,
+  "building": "bldg_TEP",
+  "floor": "2"
+ },
+ {
+  "id": "pin_study_cuc",
+  "kind": "Study space",
+  "name": "Cohon Center study nook",
+  "details": "Casual seating next to the food court.",
+  "tags": [
+   "group",
+   "food nearby"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.9420321,
+  "lat": 40.4433346,
+  "building": "bldg_CUC",
+  "floor": "2"
+ },
+ {
+  "id": "pin_study_ghc4",
+  "kind": "Study space",
+  "name": "Gates 4F collaborative commons",
+  "details": "Whiteboard walls and big tables, busy before deadlines.",
+  "tags": [
+   "group",
+   "whiteboards",
+   "outlets"
+  ],
+  "dataStatus": "Synthetic",
+  "floor": "4",
+  "lng": -79.9449351,
+  "lat": 40.4438783,
+  "building": "bldg_GHC"
+ },
+ {
+  "id": "pin_study_bh",
+  "kind": "Study space",
+  "name": "Baker Hall reading room",
+  "details": "Quiet humanities reading room.",
+  "tags": [
+   "quiet"
+  ],
+  "dataStatus": "Synthetic",
+  "lng": -79.9450187,
+  "lat": 40.4415176,
+  "building": "bldg_BH",
+  "floor": "2"
+ }
+]

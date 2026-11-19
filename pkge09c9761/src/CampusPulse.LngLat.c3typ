@@ -1,0 +1,14 @@
+/**
+ * A geographic coordinate in GeoJSON order (longitude first). Used for building footprints, room outlines,
+ * and any other polyline or polygon vertex stored on a campus record.
+ */
+type CampusPulse.LngLat {
+  /**
+   * Longitude in decimal degrees (WGS84). Negative on the CMU campus (about -79.94).
+   */
+  lng: !double
+  /**
+   * Latitude in decimal degrees (WGS84). About 40.44 on the CMU campus.
+   */
+  lat: !double
+}

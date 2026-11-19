@@ -1,0 +1,66 @@
+/**
+ * One instruction for the map, emitted by the assistant. Fields other than {@link CampusPulse.MapAction#kind} are
+ * set only when the kind uses them.
+ */
+type CampusPulse.MapAction {
+  /**
+   * What the map should do.
+   */
+  kind: !string enum CampusPulse.MapAction.Kind
+  /**
+   * Id of the pin, building, zone, or node the action targets.
+   */
+  targetId: string
+  /**
+   * Label for the UI, e.g. the pin name.
+   */
+  label: string
+  /**
+   * Longitude for FLY_TO.
+   */
+  lng: double
+  /**
+   * Latitude for FLY_TO.
+   */
+  lat: double
+  /**
+   * Zoom for FLY_TO.
+   */
+  zoom: double
+  /**
+   * Floor label to show for SELECT_BUILDING.
+   */
+  floor: string
+  /**
+   * Layer id for SET_LAYER, e.g. `food`, `crowd`.
+   */
+  layer: string
+  /**
+   * Scenario rain value for SET_SCENARIO.
+   */
+  rain: boolean
+  /**
+   * Scenario event value for SET_SCENARIO.
+   */
+  eventNearby: boolean
+  /**
+   * Scenario exam-week value for SET_SCENARIO.
+   */
+  examWeek: boolean
+  /**
+   * Origin node for DRAW_ROUTE.
+   */
+  fromNodeId: string
+  /**
+   * Destination node for DRAW_ROUTE.
+   */
+  toNodeId: string
+  /**
+   * Routing mode for DRAW_ROUTE.
+   */
+  mode: string enum NavRoute.Mode
+  /**
+   * Step-free flag for DRAW_ROUTE.
+   */
+  stepFree: boolean
+}

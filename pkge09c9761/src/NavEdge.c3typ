@@ -1,0 +1,31 @@
+/**
+ * An undirected walkable link between two {@link NavNode}s. Vertical links (stairs, elevators) connect the same
+ * stairwell or elevator on adjacent floors.
+ */
+@db(index=['fromNode', 'toNode'])
+entity type NavEdge {
+  /**
+   * One end of the link.
+   */
+  fromNode: !NavNode
+  /**
+   * The other end of the link.
+   */
+  toNode: !NavNode
+  /**
+   * Walking length in metres (vertical links use an equivalent length).
+   */
+  lengthM: !double
+  /**
+   * True when the link involves steps (stairwells, stepped entrances); Step-free routing excludes it.
+   */
+  hasSteps: boolean
+  /**
+   * True when the link is inside a building.
+   */
+  indoor: boolean
+  /**
+   * Provenance of the link.
+   */
+  dataStatus: !string enum CampusPulse.DataStatus
+}

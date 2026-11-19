@@ -1,0 +1,25 @@
+/**
+ * Simulated occupancy of one {@link CrowdZone} at the scenario's current time.
+ */
+type CrowdZone.State {
+  /**
+   * The zone, with its name, position, building, and capacity.
+   */
+  zone: CrowdZone
+  /**
+   * Simulated number of people present.
+   */
+  occupancy: int
+  /**
+   * Occupancy divided by capacity (may slightly exceed 1 when over capacity).
+   */
+  fraction: double
+  /**
+   * Crowding level 0 (empty) to 4 (at capacity) used for colours.
+   */
+  level: int
+  /**
+   * `rising`, `falling`, or `steady` over the next 20 minutes.
+   */
+  trend: string
+}

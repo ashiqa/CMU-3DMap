@@ -1,0 +1,206 @@
+[
+ {
+  "id": "pin_bath_CUC_LL_LL84A",
+  "kind": "Bathroom",
+  "name": "Restroom \u2014 Cohon Center Lower Level (LL84A)",
+  "lng": -79.9416357,
+  "lat": 40.4434162,
+  "building": "bldg_CUC",
+  "floor": "LL",
+  "details": "Restroom LL84A on the official floor plan, room LL84A (53 sq ft).",
+  "tags": [
+   "floor-plan"
+  ],
+  "dataStatus": "Verified"
+ },
+ {
+  "id": "pin_bath_CUC_LL_LL71A",
+  "kind": "Bathroom",
+  "name": "Restrooms \u2014 Cohon Center Lower Level (LL71A / LL71B)",
+  "lng": -79.9417322,
+  "lat": 40.4440106,
+  "building": "bldg_CUC",
+  "floor": "LL",
+  "details": "Restroom LL71A, Restroom LL71B on the official floor plan, rooms LL71A / LL71B (403 sq ft).",
+  "tags": [
+   "floor-plan"
+  ],
+  "dataStatus": "Verified"
+ },
+ {
+  "id": "pin_bath_CUC_LL_LL11",
+  "kind": "Bathroom",
+  "name": "Restrooms \u2014 Cohon Center Lower Level (LL11 / LL12A / LL12B)",
+  "lng": -79.9423892,
+  "lat": 40.4435303,
+  "building": "bldg_CUC",
+  "floor": "LL",
+  "details": "Restroom LL11, Unisex toilet on the official floor plan, rooms LL11 / LL12A / LL12B (396 sq ft).",
+  "tags": [
+   "floor-plan",
+   "unisex",
+   "gender-neutral"
+  ],
+  "dataStatus": "Verified"
+ },
+ {
+  "id": "pin_bath_CUC_1_145",
+  "kind": "Bathroom",
+  "name": "Restrooms \u2014 Cohon Center 1F (145 / 146E / 146G / 147)",
+  "lng": -79.9417544,
+  "lat": 40.4431304,
+  "building": "bldg_CUC",
+  "floor": "1",
+  "details": "Restroom 145, Restroom 146E, Restroom 146G, Restroom 147 on the official floor plan, rooms 145 / 146E / 146G / 147 (351 sq ft).",
+  "tags": [
+   "floor-plan"
+  ],
+  "dataStatus": "Verified"
+ },
+ {
+  "id": "pin_bath_CUC_1_154A",
+  "kind": "Bathroom",
+  "name": "Restrooms \u2014 Cohon Center 1F (154A / 154B / 155A / 157A)",
+  "lng": -79.9417998,
+  "lat": 40.4438858,
+  "building": "bldg_CUC",
+  "floor": "1",
+  "details": "Restroom 154A, Restroom 154B, Restroom 155A, Restroom 157A on the official floor plan, rooms 154A / 154B / 155A / 157A (574 sq ft).",
+  "tags": [
+   "floor-plan"
+  ],
+  "dataStatus": "Verified"
+ },
+ {
+  "id": "pin_bath_CUC_1_179",
+  "kind": "Bathroom",
+  "name": "Restroom \u2014 Cohon Center 1F (179)",
+  "lng": -79.9418077,
+  "lat": 40.4440148,
+  "building": "bldg_CUC",
+  "floor": "1",
+  "details": "Restroom 179 on the official floor plan, room 179 (50 sq ft).",
+  "tags": [
+   "floor-plan"
+  ],
+  "dataStatus": "Verified"
+ },
+ {
+  "id": "pin_bath_CUC_1_108",
+  "kind": "Bathroom",
+  "name": "Restrooms \u2014 Cohon Center 1F (108 / 109)",
+  "lng": -79.942394,
+  "lat": 40.443507,
+  "building": "bldg_CUC",
+  "floor": "1",
+  "details": "Restroom 108, Restroom 109 on the official floor plan, rooms 108 / 109 (783 sq ft).",
+  "tags": [
+   "floor-plan"
+  ],
+  "dataStatus": "Verified"
+ },
+ {
+  "id": "pin_study_CUC_1_102",
+  "kind": "Study space",
+  "name": "Study room 102 \u2014 Cohon Center 1F",
+  "lng": -79.942527,
+  "lat": 40.4431099,
+  "building": "bldg_CUC",
+  "floor": "1",
+  "details": "Study Room on the official floor plan, room 102 (677 sq ft).",
+  "tags": [
+   "floor-plan",
+   "study room"
+  ],
+  "dataStatus": "Verified"
+ },
+ {
+  "id": "pin_study_CUC_1_140",
+  "kind": "Study space",
+  "name": "Lounge 140 \u2014 Cohon Center 1F",
+  "lng": -79.9420748,
+  "lat": 40.4430985,
+  "building": "bldg_CUC",
+  "floor": "1",
+  "details": "Lounge on the official floor plan, room 140 (746 sq ft).",
+  "tags": [
+   "floor-plan",
+   "lounge"
+  ],
+  "dataStatus": "Verified"
+ },
+ {
+  "id": "pin_bath_CUC_2_208",
+  "kind": "Bathroom",
+  "name": "Restrooms \u2014 Cohon Center 2F (208 / 209)",
+  "lng": -79.9424178,
+  "lat": 40.4435095,
+  "building": "bldg_CUC",
+  "floor": "2",
+  "details": "Men's restroom, Women's restroom on the official floor plan, rooms 208 / 209 (579 sq ft).",
+  "tags": [
+   "floor-plan",
+   "women",
+   "men"
+  ],
+  "dataStatus": "Verified"
+ },
+ {
+  "id": "pin_bath_CUC_3_308",
+  "kind": "Bathroom",
+  "name": "Restrooms \u2014 Cohon Center 3F (308 / 309)",
+  "lng": -79.942472,
+  "lat": 40.4434378,
+  "building": "bldg_CUC",
+  "floor": "3",
+  "details": "Restroom 308, Restroom 309 on the official floor plan, rooms 308 / 309 (326 sq ft).",
+  "tags": [
+   "floor-plan"
+  ],
+  "dataStatus": "Verified"
+ },
+ {
+  "id": "pin_bath_CUC_3_351",
+  "kind": "Bathroom",
+  "name": "Restrooms \u2014 Cohon Center 3F (351 / 352)",
+  "lng": -79.942057,
+  "lat": 40.4438553,
+  "building": "bldg_CUC",
+  "floor": "3",
+  "details": "Restroom 351, Restroom 352 on the official floor plan, rooms 351 / 352 (269 sq ft).",
+  "tags": [
+   "floor-plan"
+  ],
+  "dataStatus": "Verified"
+ },
+ {
+  "id": "pin_study_CUC_3_336",
+  "kind": "Study space",
+  "name": "Lounge 336 \u2014 Cohon Center 3F",
+  "lng": -79.9420315,
+  "lat": 40.4437892,
+  "building": "bldg_CUC",
+  "floor": "3",
+  "details": "Lounge on the official floor plan, room 336 (1,731 sq ft).",
+  "tags": [
+   "floor-plan",
+   "lounge"
+  ],
+  "dataStatus": "Verified"
+ },
+ {
+  "id": "pin_study_CUC_3_337",
+  "kind": "Study space",
+  "name": "Lounge 337 \u2014 Cohon Center 3F",
+  "lng": -79.9419903,
+  "lat": 40.4439391,
+  "building": "bldg_CUC",
+  "floor": "3",
+  "details": "Lounge on the official floor plan, room 337 (3,177 sq ft).",
+  "tags": [
+   "floor-plan",
+   "lounge"
+  ],
+  "dataStatus": "Verified"
+ }
+]

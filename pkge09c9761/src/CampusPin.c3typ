@@ -1,0 +1,70 @@
+/**
+ * Anything placed on the campus map: free food, an event, a bathroom, a printer, or a study space. All kinds share
+ * one shape and one detail card. Food and event pins carry start/expiry times that {@link CampusPin#resetDemoClock}
+ * re-anchors to "now" so the demo feed looks live.
+ */
+@db(index=['kind', 'building', 'expiresAt'])
+entity type CampusPin {
+  /**
+   * What the pin is; selects the icon and colour.
+   */
+  kind: !string enum CampusPin.Kind
+  /**
+   * Title shown on the pin card, e.g. "Free pizza — Rangos lobby".
+   */
+  name: !string
+  /**
+   * Longitude of the pin.
+   */
+  lng: !double
+  /**
+   * Latitude of the pin.
+   */
+  lat: !double
+  /**
+   * Building the pin is inside, when it is indoors.
+   */
+  building: CampusBuilding
+  /**
+   * Floor label when indoors, e.g. `2`.
+   */
+  floor: string
+  /**
+   * One or two sentences shown on the card.
+   */
+  details: string
+  /**
+   * Image URLs for the card gallery (events and food).
+   */
+  photos: [string]
+  /**
+   * When the food appears or the event starts.
+   */
+  startsAt: datetime
+  /**
+   * When the food is expected to be gone or the event ends; the card counts down to it.
+   */
+  expiresAt: datetime
+  /**
+   * Demo anchor: minutes relative to "now" at which {@link CampusPin#startsAt} is placed by {@link CampusPin#resetDemoClock}.
+   */
+  demoStartOffsetMin: int
+  /**
+   * Demo anchor: minutes from {@link CampusPin#startsAt} to {@link CampusPin#expiresAt} after a clock reset.
+   */
+  demoDurationMin: int
+  /**
+   * Search tags such as `robotics`, `gender-neutral`, `color`, `quiet`.
+   */
+  tags: [string]
+  /**
+   * Provenance; synthetic pins show a "Demo data" label.
+   */
+  dataStatus: !string enum CampusPulse.DataStatus
+
+  /**
+   * Re-anchors every pin that has {@link CampusPin#demoDurationMin} so its start/expiry are relative to the
+   * current time. Call before a demo so food countdowns and event times read as live. Returns the number of pins updated.
+   */
+  resetDemoClock: function(): int js
+}

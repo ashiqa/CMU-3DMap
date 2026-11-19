@@ -1,0 +1,467 @@
+/* CMU Campus Pulse — warm palette (terracotta / cream / sand / sienna) applied to the map scene. */
+
+:root {
+  /* CMU Tartan brand (overlays, UI chrome) */
+  --cp-red: #c41230; /* Carnegie Red */
+  --cp-red-dark: #941120; /* Skibo Red */
+  --cp-rose: #ef3a47; /* Scots Rose */
+  --cp-gold: #fdb515; /* Gold Thread */
+  --cp-orange: #f58a1f;
+  --cp-teal: #008f91; /* Teal Thread */
+  --cp-blue: #043673; /* Blue Thread */
+  --cp-green: #009647; /* Green Thread */
+  --cp-iron: #6d6e71; /* Iron Gray */
+  --cp-steel: #e0e0e0; /* Steel Gray */
+
+  /* Role tokens used by the components (names kept from the first palette, values remapped) */
+  --cp-sienna: var(--cp-red); /* primary actions, active chips, selected */
+  --cp-rust: var(--cp-red-dark); /* hover, focus ring, "full at" */
+  --cp-terracotta: var(--cp-rose); /* accents, positive drivers */
+  --cp-sand: #fde3a3; /* forecast band, light gold surfaces */
+  --cp-hover: #efefef;
+  --cp-cream: #f3f1ec; /* scene / page background */
+  --cp-paper: #ffffff; /* panels */
+  --cp-ink: #1f1f1f; /* text */
+  --cp-muted: var(--cp-iron); /* secondary text (5.3:1 on white) */
+  --cp-border: #9a9b9e; /* control borders (≥3:1 on white) */
+
+  /* semantic pin colours */
+  --cp-food: var(--cp-gold);
+  --cp-event: var(--cp-rose);
+  --cp-bathroom: var(--cp-teal);
+  --cp-printer: var(--cp-blue);
+  --cp-study: var(--cp-green);
+
+  /* crowd levels 0–4 */
+  --cp-level-0: var(--cp-green);
+  --cp-level-1: var(--cp-gold);
+  --cp-level-2: var(--cp-orange);
+  --cp-level-3: var(--cp-rose);
+  --cp-level-4: var(--cp-red-dark);
+}
+
+.cp-scene {
+  background: var(--cp-cream);
+  color: var(--cp-ink);
+}
+
+.cp-glass {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(109, 110, 113, 0.35);
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgba(31, 31, 31, 0.14);
+  color: var(--cp-ink);
+}
+
+.cp-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--cp-border);
+  background: var(--cp-paper);
+  color: var(--cp-ink);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease, transform 120ms ease;
+}
+.cp-chip:hover {
+  background: var(--cp-hover);
+}
+.cp-chip:focus-visible {
+  outline: 3px solid var(--cp-rust);
+  outline-offset: 2px;
+}
+.cp-chip[data-active='true'] {
+  background: var(--cp-sienna);
+  color: var(--cp-cream);
+  border-color: var(--cp-sienna);
+}
+.cp-chip[data-active='true'] .cp-chip-dot {
+  background: var(--cp-cream);
+}
+/* layer chips: dark when on so the colour dot (not the chip) carries the layer's colour */
+.cp-chip--layer[data-active='true'] {
+  background: #2b2b2d;
+  border-color: #2b2b2d;
+  color: #ffffff;
+}
+.cp-chip--layer[data-active='true'] .cp-chip-dot {
+  background: var(--chip-color, #ffffff);
+}
+.cp-chip--layer .cp-dot--food { --chip-color: var(--cp-food); }
+.cp-chip--layer .cp-dot--events { --chip-color: var(--cp-event); }
+.cp-chip--layer .cp-dot--bathrooms { --chip-color: var(--cp-bathroom); }
+.cp-chip--layer .cp-dot--printers { --chip-color: var(--cp-printer); }
+.cp-chip--layer .cp-dot--study { --chip-color: var(--cp-study); }
+.cp-chip--layer .cp-dot--crowd { --chip-color: var(--cp-level-3); }
+.cp-chip--layer .cp-dot--route { --chip-color: var(--cp-red); }
+.cp-chip--layer .cp-dot--streets { --chip-color: var(--cp-steel); }
+.cp-chip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--chip-color, var(--cp-sienna));
+}
+
+.cp-btn-primary {
+  background: var(--cp-sienna);
+  color: var(--cp-cream);
+  border: 1px solid var(--cp-sienna);
+  border-radius: 8px;
+  min-height: 40px;
+  padding: 0 14px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+.cp-btn-primary:hover {
+  background: var(--cp-rust);
+  border-color: var(--cp-rust);
+}
+.cp-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.cp-btn-secondary {
+  background: var(--cp-paper);
+  color: var(--cp-ink);
+  border: 1px solid var(--cp-border);
+  border-radius: 8px;
+  min-height: 36px;
+  padding: 0 12px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+.cp-btn-secondary:hover {
+  background: var(--cp-hover);
+}
+.cp-btn-primary:focus-visible,
+.cp-btn-secondary:focus-visible,
+.cp-pin:focus-visible,
+.cp-floor-btn:focus-visible {
+  outline: 3px solid var(--cp-rust);
+  outline-offset: 2px;
+}
+
+/* ---- pins (DOM markers) ---- */
+.cp-pin {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px 999px 999px 4px;
+  transform: rotate(-45deg);
+  background: var(--pin-color, var(--cp-sienna));
+  border: 2px solid var(--cp-paper);
+  box-shadow: 0 4px 10px rgba(31, 31, 31, 0.35);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  color: var(--cp-paper);
+  animation: cp-pin-rise 500ms ease-out both;
+  padding: 0;
+}
+.cp-pin > svg {
+  transform: rotate(45deg);
+  width: 15px;
+  height: 15px;
+}
+.cp-pin[data-selected='true'] {
+  animation: cp-pin-breathe 1800ms ease-in-out infinite;
+  border-color: var(--cp-ink);
+}
+.cp-pin[data-highlight='true'] {
+  box-shadow: 0 0 0 6px rgba(196, 18, 48, 0.35), 0 4px 10px rgba(31, 31, 31, 0.35);
+}
+.cp-pin--food {
+  color: var(--cp-ink);
+}
+.cp-pin--live::after {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 999px;
+  border: 2px solid var(--pin-color, var(--cp-terracotta));
+  animation: cp-pulse 1600ms ease-out infinite;
+}
+.cp-pin-wrap {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  transform: translateY(-14px);
+}
+.cp-pin-count {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--cp-ink);
+  background: var(--cp-paper);
+  border: 1px solid var(--cp-border);
+  border-radius: 999px;
+  padding: 0 6px;
+  line-height: 14px;
+  white-space: nowrap;
+}
+
+.cp-label {
+  pointer-events: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--cp-ink);
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(109, 110, 113, 0.5);
+  border-radius: 6px;
+  padding: 1px 6px;
+  white-space: nowrap;
+  text-shadow: 0 1px 0 var(--cp-paper);
+}
+.cp-label--hero {
+  background: var(--cp-sienna);
+  color: var(--cp-cream);
+  border-color: var(--cp-sienna);
+}
+.cp-label--room {
+  font-size: 10px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.cp-floor-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--cp-border);
+  background: var(--cp-paper);
+  color: var(--cp-ink);
+  font-weight: 700;
+  cursor: pointer;
+}
+.cp-floor-btn[data-active='true'] {
+  background: var(--cp-sienna);
+  color: var(--cp-cream);
+  border-color: var(--cp-sienna);
+}
+
+/* ---- rain ---- */
+.cp-rain-canvas {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.cp-rain-tint {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(60, 70, 80, 0.22), rgba(60, 70, 80, 0.08));
+}
+
+/* ---- route legend / misc ---- */
+.cp-kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  background: var(--cp-paper);
+  border: 1px solid var(--cp-border);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.cp-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--cp-border) transparent;
+}
+
+@keyframes cp-pulse {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+@keyframes cp-pin-rise {
+  from {
+    transform: translateY(-18px) rotate(-45deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) rotate(-45deg);
+    opacity: 1;
+  }
+}
+@keyframes cp-pin-breathe {
+  0%,
+  100% {
+    transform: rotate(-45deg) scale(1);
+  }
+  50% {
+    transform: rotate(-45deg) scale(1.12);
+  }
+}
+@keyframes cp-card-in {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.cp-card-in {
+  animation: cp-card-in 260ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cp-pin,
+  .cp-pin[data-selected='true'],
+  .cp-pin--live::after,
+  .cp-card-in {
+    animation: none;
+  }
+}
+
+/* maplibre chrome tweaks */
+.maplibregl-ctrl-attrib {
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.75) !important;
+}
+.maplibregl-canvas:focus {
+  outline: none;
+}
+
+/* per-kind pin colours (static classes so Tailwind/CSS need no dynamic values) */
+.cp-pin--food { --pin-color: var(--cp-food); }
+.cp-pin--event { --pin-color: var(--cp-event); }
+.cp-pin--bathroom { --pin-color: var(--cp-bathroom); }
+.cp-pin--printer { --pin-color: var(--cp-printer); }
+.cp-pin--study { --pin-color: var(--cp-study); }
+.cp-dot--food { background: var(--cp-food); }
+.cp-dot--events { background: var(--cp-event); }
+.cp-dot--bathrooms { background: var(--cp-bathroom); }
+.cp-dot--printers { background: var(--cp-printer); }
+.cp-dot--study { background: var(--cp-study); }
+.cp-dot--crowd { background: var(--cp-level-3); }
+.cp-dot--route { background: var(--cp-rust); }
+.cp-dot--streets { background: var(--cp-border); }
+.cp-swatch--food { background: var(--cp-food); color: var(--cp-ink); }
+.cp-swatch--event { background: var(--cp-event); color: var(--cp-paper); }
+.cp-swatch--bathroom { background: var(--cp-bathroom); color: var(--cp-paper); }
+.cp-swatch--printer { background: var(--cp-printer); color: var(--cp-paper); }
+.cp-swatch--study { background: var(--cp-study); color: var(--cp-paper); }
+.cp-level-0 { background: var(--cp-level-0); color: #ffffff; }
+.cp-level-1 { background: var(--cp-level-1); color: var(--cp-ink); }
+.cp-level-2 { background: var(--cp-level-2); color: var(--cp-ink); }
+.cp-level-3 { background: var(--cp-level-3); color: #ffffff; }
+.cp-level-4 { background: var(--cp-level-4); color: #ffffff; }
+.cp-bar { height: 8px; border-radius: 999px; background: rgba(109, 110, 113, 0.22); overflow: hidden; }
+.cp-bar > span { display: block; height: 100%; border-radius: 999px; transition: width 800ms ease; }
+
+/* evacuation sandbox exit colours (match EXIT_COLORS in EvacuationPage) */
+.cp-exit-0 { background: #008f91; }
+.cp-exit-1 { background: #ef3a47; }
+.cp-exit-2 { background: #043673; }
+.cp-exit-3 { background: #009647; }
+.cp-exit-4 { background: #f58a1f; }
+
+/* far zoom: shrink pins and hide countdowns so the overview stays legible */
+.cp-map[data-zoom-band='far'] .cp-pin-wrap {
+  transform: translateY(-14px) scale(0.72);
+}
+.cp-map[data-zoom-band='far'] .cp-pin-count,
+.cp-map[data-zoom-band='far'] .cp-label--room {
+  display: none;
+}
+.cp-map[data-zoom-band='mid'] .cp-pin-count {
+  display: none;
+}
+
+/* ---- floor-plan room tags (DOM markers on the open floor) ---- */
+.cp-room-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  max-width: 150px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  color: var(--cp-ink);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(109, 110, 113, 0.45);
+  box-shadow: 0 1px 3px rgba(31, 31, 31, 0.18);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.cp-room-tag span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cp-room-tag:focus-visible {
+  outline: 3px solid var(--cp-rust);
+  outline-offset: 2px;
+}
+.cp-room-tag--minor {
+  font-weight: 500;
+  color: var(--cp-muted);
+}
+.cp-room-tag--amenity {
+  padding: 2px;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.85);
+}
+.cp-room-tag--amenity span {
+  padding-right: 4px;
+}
+.cp-room-tag--restroom { background: var(--cp-teal); }
+.cp-room-tag--lactation { background: #a23d84; }
+.cp-room-tag--elevator { background: #3d3e42; }
+.cp-room-tag--stairs { background: var(--cp-iron); }
+.cp-room-tag--cafe { background: #b8323b; }
+.cp-room-tag[data-selected='true'] {
+  background: var(--cp-red);
+  color: #ffffff;
+  border-color: var(--cp-red-dark);
+  transform: scale(1.12);
+}
+.cp-map[data-zoom-band='far'] .cp-room-tag--minor,
+.cp-map[data-zoom-band='mid'] .cp-room-tag--minor,
+.cp-map[data-zoom-band='far'] .cp-room-tag--named:not([data-selected='true']) {
+  display: none;
+}
+.cp-map[data-zoom-band='far'] .cp-room-tag--amenity:not([data-selected='true']) span {
+  display: none;
+}
+
+/* room-kind swatches (mirror ROOM_HEX in shared/campusTheme.ts) */
+.cp-room-swatch { color: var(--cp-ink); }
+.cp-room-swatch[data-kind='Restroom'] { background: #6cc3c5; }
+.cp-room-swatch[data-kind='Elevator'] { background: #4f5054; color: #ffffff; }
+.cp-room-swatch[data-kind='Stairs'] { background: #8d8e91; color: #ffffff; }
+.cp-room-swatch[data-kind='Lactation'] { background: #e6a9d4; }
+.cp-room-swatch[data-kind='Cafe'] { background: #f6a8ad; }
+.cp-room-swatch[data-kind='Meeting'] { background: #fde3a3; }
+.cp-room-swatch[data-kind='Assembly'] { background: #f7c46a; }
+.cp-room-swatch[data-kind='Athletics'] { background: #9fd1a7; }
+.cp-room-swatch[data-kind='Lounge'] { background: #b5dcc0; }
+.cp-room-swatch[data-kind='Study'] { background: #b5dcc0; }
+.cp-room-swatch[data-kind='Retail'] { background: #c8b6e8; }
+.cp-room-swatch[data-kind='Classroom'] { background: #fde3a3; }
+.cp-room-swatch[data-kind='Print'] { background: #b7c3da; }
+.cp-room-swatch[data-kind='Office'] { background: #e5e2da; }
+.cp-room-swatch[data-kind='Service'] { background: #d8cfc3; }
+.cp-room-swatch[data-kind='Storage'] { background: #d3cfc5; }
+.cp-room-swatch[data-kind='Utility'] { background: #c2c2c2; }
+.cp-room-swatch[data-kind='Stacks'] { background: #d9d2c2; }
+.cp-room-swatch[data-kind='Corridor'] { background: #f6f4ef; }
+.cp-room-swatch[data-kind='Lobby'] { background: #ffffff; }

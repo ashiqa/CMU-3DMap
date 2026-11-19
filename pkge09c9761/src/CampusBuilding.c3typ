@@ -1,0 +1,77 @@
+/**
+ * A CMU campus building with its real footprint, used for the extruded 3D map, indoor floor schematics,
+ * crowd zones, and the evacuation-planning sandbox. Footprints come from the public ScottyLabs CMU Maps
+ * building feed; heights are estimated from the published floor list.
+ */
+@db(index=['code', 'hero'])
+entity type CampusBuilding {
+  /**
+   * CMU Maps building code, e.g. `WEH` for Wean Hall or `HL` for Hunt Library.
+   */
+  code: !string
+  /**
+   * Display name, e.g. "Hunt Library".
+   */
+  name: !string
+  /**
+   * Outer ring of the footprint polygon in [lng, lat] order, closed (first vertex repeated last).
+   */
+  footprint: [CampusPulse.LngLat]
+  /**
+   * Longitude of the label point / centroid used to fly the camera to this building.
+   */
+  lng: double
+  /**
+   * Latitude of the label point / centroid used to fly the camera to this building.
+   */
+  lat: double
+  /**
+   * Extrusion height in metres for the 3D map, estimated as 3.8 m per listed floor (12 m when no floor list exists).
+   */
+  heightM: double
+  /**
+   * Floor labels published by CMU Maps, lowest first (e.g. `A`, `1`, `2`).
+   */
+  floorLabels: [string]
+  /**
+   * Floors for which this package ships {@link CampusBuilding.Room} outlines and an indoor nav graph.
+   */
+  schematicFloors: [string]
+  /**
+   * Citation for real floor plans behind {@link CampusBuilding#rooms}, e.g. the CMU ESIM plan set and report date.
+   * Empty when the floor views are demo schematics.
+   */
+  floorPlanSource: string
+  /**
+   * True for the hero buildings (Wean/Sorrells and Hunt Library) that get the rim highlight and camera presets.
+   */
+  hero: boolean
+  /**
+   * Dominant exterior material; drives the realistic colour of the 3D extrusion.
+   */
+  facade: string enum CampusBuilding.Facade
+  /**
+   * Provenance of the footprint and floor list.
+   */
+  dataStatus: !string enum CampusPulse.DataStatus
+  /**
+   * Schematic rooms drawn when a floor of this building is selected.
+   */
+  rooms: [CampusBuilding.Room](building)
+  /**
+   * Exits used by {@link CampusBuilding#planEvacuation}.
+   */
+  exits: [CampusBuilding.Exit](building)
+
+  /**
+   * Looks a building up by its CMU Maps code; returns null when no building has that code.
+   */
+  forCode: function(code: !string): CampusBuilding js
+
+  /**
+   * Runs the evacuation-planning sandbox for this building: places synthetic occupant clusters from `seed`,
+   * assigns them to exits with a nearest-exit baseline and a capacity-aware optimizer, and returns both runs.
+   * This is a planning simulation on simplified geometry, never operational emergency guidance.
+   */
+  planEvacuation: member function(occupants: int, seed: int): CampusBuilding.EvacuationPlan js
+}

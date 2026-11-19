@@ -1,0 +1,25 @@
+/**
+ * A synthetic group of occupants placed inside a building for the evacuation sandbox.
+ */
+type CampusBuilding.EvacuationPlan.Cluster {
+  /**
+   * Stable identifier within the plan, e.g. `c3`.
+   */
+  clusterId: string
+  /**
+   * Longitude of the cluster.
+   */
+  lng: double
+  /**
+   * Latitude of the cluster.
+   */
+  lat: double
+  /**
+   * Floor label the cluster is on.
+   */
+  floor: string
+  /**
+   * Number of occupants in the cluster.
+   */
+  count: int
+}

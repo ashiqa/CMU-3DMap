@@ -1,0 +1,17 @@
+/**
+ * Which exit a cluster uses in an evacuation {@link CampusBuilding.EvacuationPlan.Run}.
+ */
+type CampusBuilding.EvacuationPlan.Assignment {
+  /**
+   * {@link CampusBuilding.EvacuationPlan.Cluster#clusterId} of the cluster.
+   */
+  clusterId: string
+  /**
+   * Id of the {@link CampusBuilding.Exit} the cluster is sent to.
+   */
+  exitId: string
+  /**
+   * Seconds for the cluster to walk to that exit, including floor descent.
+   */
+  walkSec: double
+}

@@ -1,0 +1,21 @@
+/**
+ * Alternatives to a crowded {@link CrowdZone}, ranked by predicted crowding, walking time, and similarity.
+ */
+type CrowdZone.Recommendation {
+  /**
+   * The zone the user pinned.
+   */
+  origin: CrowdZone
+  /**
+   * The origin's forecast under the same scenario.
+   */
+  originForecast: CrowdZone.Forecast
+  /**
+   * Best alternatives first (up to three).
+   */
+  alternatives: [CrowdZone.Alternative]
+  /**
+   * One-sentence explanation, e.g. "Sorrells hits 92% at 2:40 PM; Hunt Library is at 55%, 4 minutes away."
+   */
+  summary: string
+}

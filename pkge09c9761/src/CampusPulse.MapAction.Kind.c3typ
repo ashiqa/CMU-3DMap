@@ -1,0 +1,41 @@
+/**
+ * Kinds of {@link CampusPulse.MapAction}.
+ */
+enum type CampusPulse.MapAction.Kind {
+  /**
+   * Move the camera to a coordinate.
+   */
+  FLY_TO = 'Fly to'
+  /**
+   * Pulse a pin or building outline.
+   */
+  HIGHLIGHT = 'Highlight'
+  /**
+   * Open the place card for a pin.
+   */
+  OPEN_PIN = 'Open pin'
+  /**
+   * Draw the route between two nav nodes.
+   */
+  DRAW_ROUTE = 'Draw route'
+  /**
+   * Turn a map layer on.
+   */
+  SET_LAYER = 'Set layer'
+  /**
+   * Change the simulated scenario.
+   */
+  SET_SCENARIO = 'Set scenario'
+  /**
+   * Open the forecast card for a crowd zone.
+   */
+  SHOW_FORECAST = 'Show forecast'
+  /**
+   * Select a building and optionally a floor.
+   */
+  SELECT_BUILDING = 'Select building'
+  /**
+   * Open a room's floor and highlight it; `targetId` is the {@link CampusBuilding.Room} id, `floor` its floor.
+   */
+  SELECT_ROOM = 'Select room'
+}

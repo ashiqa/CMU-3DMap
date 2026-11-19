@@ -1,0 +1,17 @@
+/**
+ * Where the display name of a {@link CampusBuilding.Room} came from, so the UI can tell printed names from guesses.
+ */
+enum type CampusBuilding.Room.NameSource {
+  /**
+   * Name printed on the official floor plan, e.g. "RANGOS BALLROOM 2".
+   */
+  FLOOR_PLAN = 'Floor plan'
+  /**
+   * Name inferred from the plan's geometry or department (e.g. the fan-shaped seating is McConomy Auditorium); not printed.
+   */
+  INFERRED = 'Inferred'
+  /**
+   * Name generated from the space type and room number, e.g. "Meeting room LL40".
+   */
+  GENERATED = 'Generated'
+}

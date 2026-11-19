@@ -1,0 +1,13 @@
+/**
+ * Routing modes for {@link NavRoute#compute}.
+ */
+enum type NavRoute.Mode {
+  /**
+   * Shortest walking time.
+   */
+  FAST = 'Fast'
+  /**
+   * Shortest walking time after penalising edges through crowded zones.
+   */
+  CALM = 'Calm'
+}

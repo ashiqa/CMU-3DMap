@@ -1,0 +1,92 @@
+[
+ {
+  "id": "exit_GHC_0",
+  "building": "bldg_GHC",
+  "name": "North (Forbes)",
+  "lng": -79.9446507,
+  "lat": 40.4440367,
+  "capacityPerMin": 60,
+  "assemblyPoint": "Forbes Ave sidewalk",
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "exit_GHC_1",
+  "building": "bldg_GHC",
+  "name": "East (Cut / Pausch Bridge)",
+  "lng": -79.9440819,
+  "lat": 40.4435086,
+  "capacityPerMin": 45,
+  "assemblyPoint": "The Cut lawn",
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "exit_GHC_2",
+  "building": "bldg_GHC",
+  "name": "South (toward Wean)",
+  "lng": -79.9446507,
+  "lat": 40.4430765,
+  "capacityPerMin": 40,
+  "assemblyPoint": "Wean\u2013Doherty walkway",
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "exit_HL_3",
+  "building": "bldg_HL",
+  "name": "North (main)",
+  "lng": -79.9437789,
+  "lat": 40.4413262,
+  "capacityPerMin": 60,
+  "assemblyPoint": "The Mall east lawn",
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "exit_HL_4",
+  "building": "bldg_HL",
+  "name": "East (CFA side)",
+  "lng": -79.9433505,
+  "lat": 40.4410883,
+  "capacityPerMin": 30,
+  "assemblyPoint": "CFA plaza",
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "exit_HL_5",
+  "building": "bldg_HL",
+  "name": "West (Baker side)",
+  "lng": -79.9441294,
+  "lat": 40.4410883,
+  "capacityPerMin": 30,
+  "assemblyPoint": "Baker Hall walkway",
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "exit_WEH_6",
+  "building": "bldg_WEH",
+  "name": "South (Mall)",
+  "lng": -79.9458097,
+  "lat": 40.4424197,
+  "capacityPerMin": 60,
+  "assemblyPoint": "The Mall",
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "exit_WEH_7",
+  "building": "bldg_WEH",
+  "name": "North",
+  "lng": -79.9458097,
+  "lat": 40.4429186,
+  "capacityPerMin": 45,
+  "assemblyPoint": "Wean\u2013Doherty north walkway",
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "exit_WEH_8",
+  "building": "bldg_WEH",
+  "name": "West",
+  "lng": -79.9465607,
+  "lat": 40.4426692,
+  "capacityPerMin": 40,
+  "assemblyPoint": "Hamerschlag plaza",
+  "dataStatus": "Synthetic"
+ }
+]

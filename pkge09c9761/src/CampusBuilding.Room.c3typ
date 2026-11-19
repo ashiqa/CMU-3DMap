@@ -1,0 +1,69 @@
+/**
+ * A room, corridor, or vertical-circulation block on one floor of a {@link CampusBuilding}, drawn as a low extrusion
+ * when that floor is open on the map. Gates uses hand-drawn demo outlines ({@link CampusBuilding.Room#dataStatus} =
+ * Synthetic); the Cohon University Center, Hunt Library, Newell-Simon Hall, and Wean Hall use outlines traced from the
+ * official CMU ESIM floor plans ({@link CampusBuilding#floorPlanSource}), with room numbers, areas, space types, and
+ * departments copied from the plans.
+ */
+@db(index=['building', 'floor', 'kind', 'number'])
+entity type CampusBuilding.Room {
+  /**
+   * Building this room belongs to.
+   */
+  building: !CampusBuilding
+  /**
+   * Floor label matching one of {@link CampusBuilding#floorLabels}, e.g. `4` or `LL`.
+   */
+  floor: !string
+  /**
+   * Display name shown on the floor view, e.g. "Rangos Ballroom 2" or "Restroom 108".
+   * {@link CampusBuilding.Room#nameSource} says whether it was printed on the plan, inferred, or generated.
+   */
+  name: !string
+  /**
+   * What the space is used for; drives the fill colour, the floor directory filters, and amenity icons.
+   */
+  kind: !string enum CampusBuilding.Room.Kind
+  /**
+   * Room number from the floor plan, e.g. `222B` or `LL12A`. Empty for demo schematics.
+   */
+  number: string
+  /**
+   * Space-use category exactly as printed on the ESIM plan, e.g. "Public Rest Room" or "Conference Room".
+   */
+  spaceType: string
+  /**
+   * Assignable floor area in square feet, as printed on the plan.
+   */
+  areaSqFt: int
+  /**
+   * Department the space is assigned to on the plan, e.g. "Dining Administration".
+   */
+  department: string
+  /**
+   * Where {@link CampusBuilding.Room#name} came from.
+   */
+  nameSource: string enum CampusBuilding.Room.NameSource
+  /**
+   * Closed outline polygon in [lng, lat] order.
+   */
+  outline: [CampusPulse.LngLat]
+  /**
+   * Longitude of a label point guaranteed to lie inside {@link CampusBuilding.Room#outline} (outlines can be L-shaped,
+   * so the vertex average may fall outside).
+   */
+  labelLng: double
+  /**
+   * Latitude of the label point; see {@link CampusBuilding.Room#labelLng}.
+   */
+  labelLat: double
+  /**
+   * Navigation-graph node inside this room, when the room is a routable destination (restrooms, stairs, elevators,
+   * meeting rooms, dining, named rooms). Routing to other rooms snaps to the nearest corridor node.
+   */
+  navNode: NavNode
+  /**
+   * Provenance of the outline and name.
+   */
+  dataStatus: !string enum CampusPulse.DataStatus
+}

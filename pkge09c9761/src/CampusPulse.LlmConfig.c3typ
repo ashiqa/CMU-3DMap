@@ -1,0 +1,18 @@
+/**
+ * Non-secret settings for the assistant's LLM. The endpoint URL and API key live in {@link CampusPulse.Llm}'s
+ * RestConfig (set with `setApiUrlAndAuth`), so this type only holds the model choice and sampling options.
+ */
+type CampusPulse.LlmConfig mixes Config, Singleton {
+  /**
+   * Model name sent in the request, e.g. `gemini-2.5-flash`.
+   */
+  model: string = 'gemini-2.5-flash'
+  /**
+   * Sampling temperature; low keeps tool arguments precise.
+   */
+  temperature: double = 0.2
+  /**
+   * Maximum tool-call rounds before the assistant answers with what it has.
+   */
+  maxToolRounds: int = 3
+}

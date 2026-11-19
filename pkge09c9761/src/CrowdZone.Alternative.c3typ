@@ -1,0 +1,29 @@
+/**
+ * One candidate in a {@link CrowdZone.Recommendation}.
+ */
+type CrowdZone.Alternative {
+  /**
+   * The alternative zone.
+   */
+  zone: CrowdZone
+  /**
+   * Central occupancy estimate 30 minutes from now (fraction of capacity).
+   */
+  predictedFraction: double
+  /**
+   * Estimated walking time from the origin, in minutes.
+   */
+  walkMinutes: double
+  /**
+   * Amenity similarity to the origin (0–1).
+   */
+  similarity: double
+  /**
+   * Composite ranking score (higher is better).
+   */
+  score: double
+  /**
+   * Why it ranks where it does, e.g. "55% predicted · 4 min walk · quiet, outlets".
+   */
+  reason: string
+}

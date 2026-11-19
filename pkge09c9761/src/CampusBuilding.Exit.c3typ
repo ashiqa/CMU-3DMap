@@ -1,0 +1,35 @@
+/**
+ * An exit of a {@link CampusBuilding} with an assumed throughput, used only by the evacuation-planning sandbox
+ * ({@link CampusBuilding#planEvacuation}). Capacities are demo assumptions, not surveyed values.
+ */
+@db(index=['building'])
+entity type CampusBuilding.Exit {
+  /**
+   * Building this exit belongs to.
+   */
+  building: !CampusBuilding
+  /**
+   * Short name shown on the exit load strip, e.g. "North (Forbes)".
+   */
+  name: !string
+  /**
+   * Longitude of the exit door.
+   */
+  lng: !double
+  /**
+   * Latitude of the exit door.
+   */
+  lat: !double
+  /**
+   * Assumed persons per minute the exit can pass.
+   */
+  capacityPerMin: !int
+  /**
+   * Where occupants leaving through this exit gather, e.g. "The Cut lawn".
+   */
+  assemblyPoint: string
+  /**
+   * Provenance of the position and capacity.
+   */
+  dataStatus: !string enum CampusPulse.DataStatus
+}

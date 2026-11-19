@@ -1,0 +1,89 @@
+/**
+ * What a schematic {@link CampusBuilding.Room} block is used for.
+ */
+enum type CampusBuilding.Room.Kind {
+  /**
+   * Open study area or library reading room.
+   */
+  STUDY = 'Study'
+  /**
+   * Teaching room or lecture hall.
+   */
+  CLASSROOM = 'Classroom'
+  /**
+   * Faculty or staff office block.
+   */
+  OFFICE = 'Office'
+  /**
+   * Hallway connecting rooms on the floor.
+   */
+  CORRIDOR = 'Corridor'
+  /**
+   * Entrance lobby or atrium.
+   */
+  LOBBY = 'Lobby'
+  /**
+   * Restroom.
+   */
+  RESTROOM = 'Restroom'
+  /**
+   * Print station or cluster.
+   */
+  PRINT = 'Print'
+  /**
+   * Stairwell connecting floors; not step-free.
+   */
+  STAIRS = 'Stairs'
+  /**
+   * Elevator connecting floors; step-free.
+   */
+  ELEVATOR = 'Elevator'
+  /**
+   * Café or food service counter.
+   */
+  CAFE = 'Cafe'
+  /**
+   * Book stacks or storage.
+   */
+  STACKS = 'Stacks'
+  /**
+   * Conference or meeting room.
+   */
+  MEETING = 'Meeting'
+  /**
+   * Lounge with seating, usable for casual study.
+   */
+  LOUNGE = 'Lounge'
+  /**
+   * Ballroom, auditorium, stage, or other event space.
+   */
+  ASSEMBLY = 'Assembly'
+  /**
+   * Gym, pool, fitness or exercise studio, locker-room support.
+   */
+  ATHLETICS = 'Athletics'
+  /**
+   * Shop or merchandising space.
+   */
+  RETAIL = 'Retail'
+  /**
+   * Back-of-house support such as kitchens, servery prep, or event service rooms.
+   */
+  SERVICE = 'Service'
+  /**
+   * Storage room.
+   */
+  STORAGE = 'Storage'
+  /**
+   * Mechanical, electrical, telecom, or janitor room; not publicly accessible.
+   */
+  UTILITY = 'Utility'
+  /**
+   * Lactation room.
+   */
+  LACTATION = 'Lactation'
+  /**
+   * Research or open (non-class) laboratory, ESIM space types 220 / 250 (e.g. robotics labs in Newell-Simon Hall).
+   */
+  LAB = 'Lab'
+}

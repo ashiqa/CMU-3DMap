@@ -1,0 +1,17 @@
+/**
+ * Whether the assistant can reach an LLM.
+ */
+type CampusPulse.LlmStatus {
+  /**
+   * True when a base URL and key have been set on {@link CampusPulse.Llm}.
+   */
+  configured: boolean
+  /**
+   * Model that will be used, from {@link CampusPulse.LlmConfig#model}.
+   */
+  model: string
+  /**
+   * Base URL of the endpoint (no credentials).
+   */
+  baseUrl: string
+}

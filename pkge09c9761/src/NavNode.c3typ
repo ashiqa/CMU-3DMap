@@ -1,0 +1,46 @@
+/**
+ * A vertex of the campus navigation graph: an outdoor path junction, a building door, an indoor corridor point,
+ * a stairwell or elevator landing, or a room. Outdoor and indoor nodes share one graph so a route can run from a
+ * lawn into a building and up to a room on a specific floor.
+ */
+@db(index=['building', 'floor', 'kind', 'zone'])
+entity type NavNode {
+  /**
+   * Longitude of the node.
+   */
+  lng: !double
+  /**
+   * Latitude of the node.
+   */
+  lat: !double
+  /**
+   * Role of the node in the graph.
+   */
+  kind: !string enum NavNode.Kind
+  /**
+   * Display label used in turn-by-turn steps, e.g. "Hunt Library north entrance".
+   */
+  label: string
+  /**
+   * Building the node is in or attached to (doors and all indoor nodes).
+   */
+  building: CampusBuilding
+  /**
+   * Floor label for indoor nodes, e.g. `4`.
+   */
+  floor: string
+  /**
+   * Crowd zone the node passes through; Calm routing penalises edges touching busy zones.
+   */
+  zone: CrowdZone
+  /**
+   * Provenance of the position.
+   */
+  dataStatus: !string enum CampusPulse.DataStatus
+
+  /**
+   * Returns the graph node closest to a coordinate. Restrict to a building and floor to snap an indoor pin to the
+   * right floor; otherwise the search prefers outdoor and door nodes.
+   */
+  nearest: function(lng: !double, lat: !double, buildingCode: string, floor: string): NavNode js
+}

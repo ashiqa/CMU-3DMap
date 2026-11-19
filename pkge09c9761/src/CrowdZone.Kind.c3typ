@@ -1,0 +1,29 @@
+/**
+ * Categories of {@link CrowdZone}.
+ */
+enum type CrowdZone.Kind {
+  /**
+   * A campus library or library floor.
+   */
+  LIBRARY = 'Library'
+  /**
+   * A study lounge or commons that is not a library.
+   */
+  STUDY_SPACE = 'Study space'
+  /**
+   * A dining hall or food court.
+   */
+  DINING = 'Dining'
+  /**
+   * A classroom and office building.
+   */
+  ACADEMIC = 'Academic'
+  /**
+   * The student union.
+   */
+  STUDENT_CENTER = 'Student center'
+  /**
+   * An outdoor lawn or plaza.
+   */
+  QUAD = 'Quad'
+}

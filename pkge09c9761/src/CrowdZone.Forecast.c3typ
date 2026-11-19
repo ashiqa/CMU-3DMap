@@ -1,0 +1,54 @@
+/**
+ * A scenario-driven occupancy forecast for one {@link CrowdZone}. The band is the spread across scenario
+ * assumptions and deterministic jitter, not a statistical confidence interval.
+ */
+type CrowdZone.Forecast {
+  /**
+   * The zone being forecast.
+   */
+  zone: CrowdZone
+  /**
+   * Scenario the forecast was computed under.
+   */
+  scenario: CampusPulse.Scenario
+  /**
+   * Minutes ahead of the scenario's "now" for each sample (0, 10, 20, …).
+   */
+  minutesAhead: [int]
+  /**
+   * Low edge of the scenario band per sample (fraction of capacity).
+   */
+  p10: [double]
+  /**
+   * Central estimate per sample (fraction of capacity).
+   */
+  p50: [double]
+  /**
+   * High edge of the scenario band per sample (fraction of capacity).
+   */
+  p90: [double]
+  /**
+   * Central estimate at minute 0.
+   */
+  nowFraction: double
+  /**
+   * Highest central estimate within the horizon.
+   */
+  peakFraction: double
+  /**
+   * Minutes until the central estimate first reaches 90% of capacity; unset when it never does within the horizon.
+   */
+  timeToCapacityMin: int
+  /**
+   * Clock label for that moment, e.g. "2:40 PM"; unset when capacity is not reached.
+   */
+  capacityAtLabel: string
+  /**
+   * Ranked contributions behind the peak.
+   */
+  drivers: [CrowdZone.Forecast.Driver]
+  /**
+   * Short description of how the numbers were produced, shown in the "How this works" chip.
+   */
+  method: string
+}

@@ -1,0 +1,25 @@
+/**
+ * The Campus Pulse assistant: turns a natural-language question into an answer plus typed map actions that fly,
+ * highlight, open pins, draw routes, show forecasts, or flip the scenario. Uses the configured LLM
+ * ({@link CampusPulse.Llm}) with tool calling when available and a deterministic intent parser otherwise, so
+ * the demo never depends on the network.
+ */
+type CampusPulse {
+  /**
+   * Answers `text` under `scenario`. `nearLng`/`nearLat` give the user's position for "closest …" questions and as
+   * the default route origin; when omitted the Fence is used. Always returns a reply, falling back to the
+   * deterministic parser and reporting why in {@link CampusPulse.AssistantReply#technique}.
+   */
+  ask: function(text: !string, scenario: CampusPulse.Scenario, nearLng: double, nearLat: double): CampusPulse.AssistantReply js
+
+  /**
+   * Reports whether an LLM endpoint is configured for {@link CampusPulse.Llm} and which model is used.
+   */
+  llmStatus: function(): CampusPulse.LlmStatus js
+
+  /**
+   * Resolves free text such as "Hunt 2nd floor", "Sorrells", or "GHC" to a building, floor, and the nearest nav
+   * node. Returns null when nothing matches.
+   */
+  resolvePlace: function(text: !string): CampusPulse.Place js
+}

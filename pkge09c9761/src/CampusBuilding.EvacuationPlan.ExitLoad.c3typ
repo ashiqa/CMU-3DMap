@@ -1,0 +1,21 @@
+/**
+ * Load placed on one exit by an evacuation {@link CampusBuilding.EvacuationPlan.Run}.
+ */
+type CampusBuilding.EvacuationPlan.ExitLoad {
+  /**
+   * The exit.
+   */
+  exit: CampusBuilding.Exit
+  /**
+   * Occupants assigned to this exit.
+   */
+  assigned: int
+  /**
+   * Share of all occupants using this exit (0–1).
+   */
+  fraction: double
+  /**
+   * Seconds until this exit has passed everyone assigned to it.
+   */
+  clearanceSec: double
+}

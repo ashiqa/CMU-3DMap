@@ -1,0 +1,27 @@
+/**
+ * The single simulated world state that drives the crowd layer, the occupancy forecast, Calm routing, and the
+ * study-space recommendation. The UI builds one from its scenario toggles and passes it to every call so all
+ * four features change together when a toggle flips.
+ */
+type CampusPulse.Scenario {
+  /**
+   * Minutes since local midnight (0–1439) for "now". When unset, the server uses the current Eastern time.
+   */
+  minuteOfDay: int
+  /**
+   * True when it is raining: pushes people indoors, raising indoor occupancy and emptying quads.
+   */
+  rain: boolean
+  /**
+   * True when a large event is drawing a crowd near the student center and the Cut.
+   */
+  eventNearby: boolean
+  /**
+   * True during exam week: libraries and study spaces run hotter all day.
+   */
+  examWeek: boolean
+  /**
+   * Seed for the deterministic jitter so the same scenario always replays identically in Tour mode.
+   */
+  seed: int
+}

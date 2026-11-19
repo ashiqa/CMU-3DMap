@@ -1,0 +1,42 @@
+/**
+ * What the assistant says and what the map should do about it.
+ */
+type CampusPulse.AssistantReply {
+  /**
+   * The answer shown in the assistant sheet.
+   */
+  text: string
+  /**
+   * Detected intent, e.g. `find_nearest`, `events_about`, `route`, `forecast`, `set_scenario`, `help`.
+   */
+  intent: string
+  /**
+   * How the answer was produced, for the "How this works" chip, e.g. "Gemini tool calling" or
+   * "Deterministic intent parser (LLM not configured)".
+   */
+  technique: string
+  /**
+   * True when the LLM produced the answer.
+   */
+  usedLlm: boolean
+  /**
+   * Map actions to execute in order.
+   */
+  actions: [CampusPulse.MapAction]
+  /**
+   * Pins referenced by the answer, best match first.
+   */
+  pins: [CampusPin]
+  /**
+   * Route computed for a navigation answer.
+   */
+  route: NavRoute
+  /**
+   * Forecast computed for a crowding answer.
+   */
+  forecast: CrowdZone.Forecast
+  /**
+   * Recommendation computed for a "where should I study" answer.
+   */
+  recommendation: CrowdZone.Recommendation
+}

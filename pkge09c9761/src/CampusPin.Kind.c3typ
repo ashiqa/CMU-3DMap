@@ -1,0 +1,25 @@
+/**
+ * The kinds of {@link CampusPin}.
+ */
+enum type CampusPin.Kind {
+  /**
+   * Free or leftover food available for a limited time.
+   */
+  FOOD = 'Food'
+  /**
+   * A scheduled campus event with photos.
+   */
+  EVENT = 'Event'
+  /**
+   * A restroom.
+   */
+  BATHROOM = 'Bathroom'
+  /**
+   * A print station.
+   */
+  PRINTER = 'Printer'
+  /**
+   * A study space that can be pinned and forecast.
+   */
+  STUDY = 'Study space'
+}

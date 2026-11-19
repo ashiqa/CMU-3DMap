@@ -1,0 +1,29 @@
+/**
+ * One turn-by-turn instruction of a {@link NavRoute}.
+ */
+type NavRoute.Step {
+  /**
+   * Instruction text, e.g. "Enter Hunt Library" or "Take the elevator to floor 4".
+   */
+  text: string
+  /**
+   * Walking distance covered by this step in metres.
+   */
+  distanceM: double
+  /**
+   * Floor label where the step happens, when indoors.
+   */
+  floor: string
+  /**
+   * Building code where the step happens, when indoors.
+   */
+  buildingCode: string
+  /**
+   * Longitude where the step begins.
+   */
+  lng: double
+  /**
+   * Latitude where the step begins.
+   */
+  lat: double
+}

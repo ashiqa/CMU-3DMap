@@ -1,0 +1,56 @@
+/**
+ * A computed walking route over the campus navigation graph, outdoors and indoors, with geometry per floor and
+ * turn-by-turn steps. Produced by {@link NavRoute#compute}.
+ */
+type NavRoute {
+  /**
+   * Start node.
+   */
+  fromNode: NavNode
+  /**
+   * Destination node.
+   */
+  toNode: NavNode
+  /**
+   * Routing mode that was applied.
+   */
+  mode: string enum NavRoute.Mode
+  /**
+   * True when stepped links were excluded.
+   */
+  stepFree: boolean
+  /**
+   * Total walking distance in metres.
+   */
+  distanceM: double
+  /**
+   * Estimated walking time in minutes, including stairs and elevator waits.
+   */
+  etaMinutes: double
+  /**
+   * Extra minutes the Calm penalty added compared with the raw walking time (0 for Fast).
+   */
+  crowdPenaltyMin: double
+  /**
+   * Ordered vertices of the route, each tagged with its floor and building so the UI can draw indoor segments.
+   */
+  points: [NavRoute.Point]
+  /**
+   * Turn-by-turn instructions.
+   */
+  steps: [NavRoute.Step]
+  /**
+   * Floor labels visited indoors, in order.
+   */
+  floorsVisited: [string]
+  /**
+   * True when no path exists between the nodes under the given constraints.
+   */
+  unreachable: boolean
+
+  /**
+   * Finds the best route between two nodes. `mode` defaults to Fast; Calm adds a time penalty for edges through
+   * crowded zones under `scenario`. `stepFree` excludes stepped links so the route uses elevators and ramps.
+   */
+  compute: function(fromNodeId: !string, toNodeId: !string, mode: string enum NavRoute.Mode, stepFree: boolean, scenario: CampusPulse.Scenario): NavRoute js
+}

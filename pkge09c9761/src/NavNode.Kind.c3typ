@@ -1,0 +1,33 @@
+/**
+ * Roles of a {@link NavNode} in the navigation graph.
+ */
+enum type NavNode.Kind {
+  /**
+   * Outdoor path junction.
+   */
+  OUTDOOR = 'Outdoor'
+  /**
+   * Building entrance; joins the outdoor graph to an indoor floor.
+   */
+  DOOR = 'Door'
+  /**
+   * Point along an indoor corridor.
+   */
+  CORRIDOR = 'Corridor'
+  /**
+   * Stairwell landing on one floor.
+   */
+  STAIRS = 'Stairs'
+  /**
+   * Elevator landing on one floor.
+   */
+  ELEVATOR = 'Elevator'
+  /**
+   * A room or named destination inside a building.
+   */
+  ROOM = 'Room'
+  /**
+   * Outdoor landmark that can be a destination, e.g. The Fence.
+   */
+  LANDMARK = 'Landmark'
+}

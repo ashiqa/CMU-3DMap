@@ -1,0 +1,13 @@
+/**
+ * One named contribution to a forecast peak, e.g. "Rain pushes people indoors" at +0.18.
+ */
+type CrowdZone.Forecast.Driver {
+  /**
+   * Human-readable driver, e.g. "Class change 2:20 PM".
+   */
+  label: string
+  /**
+   * Signed contribution to the occupancy fraction at the peak.
+   */
+  contribution: double
+}

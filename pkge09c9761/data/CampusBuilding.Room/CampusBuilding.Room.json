@@ -1,0 +1,572 @@
+[
+ {
+  "id": "room_GHC_4_lobby",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "name": "Lobby 4F",
+  "kind": "Lobby",
+  "outline": [
+   {
+    "lng": -79.9445938,
+    "lat": 40.4433646
+   },
+   {
+    "lng": -79.9441047,
+    "lat": 40.4433646
+   },
+   {
+    "lng": -79.9441047,
+    "lat": 40.4436526
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4436526
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4433646
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_4_elev",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "name": "Elevator",
+  "kind": "Elevator",
+  "outline": [
+   {
+    "lng": -79.9447758,
+    "lat": 40.4435086
+   },
+   {
+    "lng": -79.9447076,
+    "lat": 40.4435086
+   },
+   {
+    "lng": -79.9447076,
+    "lat": 40.4436046
+   },
+   {
+    "lng": -79.9447758,
+    "lat": 40.4436046
+   },
+   {
+    "lng": -79.9447758,
+    "lat": 40.4435086
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_4_stairs",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "name": "Stairs",
+  "kind": "Stairs",
+  "outline": [
+   {
+    "lng": -79.9445938,
+    "lat": 40.4436718
+   },
+   {
+    "lng": -79.9445256,
+    "lat": 40.4436718
+   },
+   {
+    "lng": -79.9445256,
+    "lat": 40.4437678
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4437678
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4436718
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_4_helix",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "name": "Helix ramp",
+  "kind": "Elevator",
+  "outline": [
+   {
+    "lng": -79.9448782,
+    "lat": 40.4433646
+   },
+   {
+    "lng": -79.9447872,
+    "lat": 40.4433646
+   },
+   {
+    "lng": -79.9447872,
+    "lat": 40.4437486
+   },
+   {
+    "lng": -79.9448782,
+    "lat": 40.4437486
+   },
+   {
+    "lng": -79.9448782,
+    "lat": 40.4433646
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_4_commons",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "name": "Collaborative commons 4F",
+  "kind": "Study",
+  "outline": [
+   {
+    "lng": -79.9451626,
+    "lat": 40.4437678
+   },
+   {
+    "lng": -79.9447076,
+    "lat": 40.4437678
+   },
+   {
+    "lng": -79.9447076,
+    "lat": 40.4439887
+   },
+   {
+    "lng": -79.9451626,
+    "lat": 40.4439887
+   },
+   {
+    "lng": -79.9451626,
+    "lat": 40.4437678
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_4_rr",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "name": "Restroom 4F",
+  "kind": "Restroom",
+  "outline": [
+   {
+    "lng": -79.9445938,
+    "lat": 40.4437966
+   },
+   {
+    "lng": -79.9444459,
+    "lat": 40.4437966
+   },
+   {
+    "lng": -79.9444459,
+    "lat": 40.4439887
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4439887
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4437966
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_4_cafe",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "name": "Caf\u00e9 4F (demo)",
+  "kind": "Cafe",
+  "outline": [
+   {
+    "lng": -79.9444232,
+    "lat": 40.4437966
+   },
+   {
+    "lng": -79.9441388,
+    "lat": 40.4437966
+   },
+   {
+    "lng": -79.9441388,
+    "lat": 40.4439887
+   },
+   {
+    "lng": -79.9444232,
+    "lat": 40.4439887
+   },
+   {
+    "lng": -79.9444232,
+    "lat": 40.4437966
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_4_lecture",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "name": "Gates 4F Lecture Hall",
+  "kind": "Classroom",
+  "outline": [
+   {
+    "lng": -79.9451626,
+    "lat": 40.4431245
+   },
+   {
+    "lng": -79.9447076,
+    "lat": 40.4431245
+   },
+   {
+    "lng": -79.9447076,
+    "lat": 40.4433454
+   },
+   {
+    "lng": -79.9451626,
+    "lat": 40.4433454
+   },
+   {
+    "lng": -79.9451626,
+    "lat": 40.4431245
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_4_print",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "name": "Cluster printer 4F",
+  "kind": "Print",
+  "outline": [
+   {
+    "lng": -79.9445938,
+    "lat": 40.4431245
+   },
+   {
+    "lng": -79.9444801,
+    "lat": 40.4431245
+   },
+   {
+    "lng": -79.9444801,
+    "lat": 40.4433165
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4433165
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4431245
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_4_off",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "name": "Offices 4F",
+  "kind": "Office",
+  "outline": [
+   {
+    "lng": -79.9444459,
+    "lat": 40.4431245
+   },
+   {
+    "lng": -79.9441388,
+    "lat": 40.4431245
+   },
+   {
+    "lng": -79.9441388,
+    "lat": 40.4433165
+   },
+   {
+    "lng": -79.9444459,
+    "lat": 40.4433165
+   },
+   {
+    "lng": -79.9444459,
+    "lat": 40.4431245
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_5_clsA",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "name": "Gates 5F Classroom A",
+  "kind": "Classroom",
+  "outline": [
+   {
+    "lng": -79.9451626,
+    "lat": 40.4437678
+   },
+   {
+    "lng": -79.9448782,
+    "lat": 40.4437678
+   },
+   {
+    "lng": -79.9448782,
+    "lat": 40.4439887
+   },
+   {
+    "lng": -79.9451626,
+    "lat": 40.4439887
+   },
+   {
+    "lng": -79.9451626,
+    "lat": 40.4437678
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_5_clsB",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "name": "Gates 5F Classroom B",
+  "kind": "Classroom",
+  "outline": [
+   {
+    "lng": -79.9451626,
+    "lat": 40.4431245
+   },
+   {
+    "lng": -79.9448782,
+    "lat": 40.4431245
+   },
+   {
+    "lng": -79.9448782,
+    "lat": 40.4433454
+   },
+   {
+    "lng": -79.9451626,
+    "lat": 40.4433454
+   },
+   {
+    "lng": -79.9451626,
+    "lat": 40.4431245
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_5_elev",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "name": "Elevator",
+  "kind": "Elevator",
+  "outline": [
+   {
+    "lng": -79.9447758,
+    "lat": 40.4435086
+   },
+   {
+    "lng": -79.9447076,
+    "lat": 40.4435086
+   },
+   {
+    "lng": -79.9447076,
+    "lat": 40.4436046
+   },
+   {
+    "lng": -79.9447758,
+    "lat": 40.4436046
+   },
+   {
+    "lng": -79.9447758,
+    "lat": 40.4435086
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_5_stairs",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "name": "Stairs",
+  "kind": "Stairs",
+  "outline": [
+   {
+    "lng": -79.9445938,
+    "lat": 40.4436718
+   },
+   {
+    "lng": -79.9445256,
+    "lat": 40.4436718
+   },
+   {
+    "lng": -79.9445256,
+    "lat": 40.4437678
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4437678
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4436718
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_5_helix",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "name": "Helix ramp",
+  "kind": "Elevator",
+  "outline": [
+   {
+    "lng": -79.9448782,
+    "lat": 40.4433646
+   },
+   {
+    "lng": -79.9447872,
+    "lat": 40.4433646
+   },
+   {
+    "lng": -79.9447872,
+    "lat": 40.4437486
+   },
+   {
+    "lng": -79.9448782,
+    "lat": 40.4437486
+   },
+   {
+    "lng": -79.9448782,
+    "lat": 40.4433646
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_5_rr",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "name": "Restroom 5F",
+  "kind": "Restroom",
+  "outline": [
+   {
+    "lng": -79.9445938,
+    "lat": 40.4437966
+   },
+   {
+    "lng": -79.9444459,
+    "lat": 40.4437966
+   },
+   {
+    "lng": -79.9444459,
+    "lat": 40.4439887
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4439887
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4437966
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_5_off",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "name": "Offices 5F",
+  "kind": "Office",
+  "outline": [
+   {
+    "lng": -79.9444232,
+    "lat": 40.4437486
+   },
+   {
+    "lng": -79.9441388,
+    "lat": 40.4437486
+   },
+   {
+    "lng": -79.9441388,
+    "lat": 40.4439887
+   },
+   {
+    "lng": -79.9444232,
+    "lat": 40.4439887
+   },
+   {
+    "lng": -79.9444232,
+    "lat": 40.4437486
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_5_lounge",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "name": "Gates 5F Lounge",
+  "kind": "Study",
+  "outline": [
+   {
+    "lng": -79.9445938,
+    "lat": 40.4433646
+   },
+   {
+    "lng": -79.9441388,
+    "lat": 40.4433646
+   },
+   {
+    "lng": -79.9441388,
+    "lat": 40.4436526
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4436526
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4433646
+   }
+  ],
+  "dataStatus": "Synthetic"
+ },
+ {
+  "id": "room_GHC_5_labs",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "name": "Labs 5F",
+  "kind": "Office",
+  "outline": [
+   {
+    "lng": -79.9445938,
+    "lat": 40.4431245
+   },
+   {
+    "lng": -79.9441388,
+    "lat": 40.4431245
+   },
+   {
+    "lng": -79.9441388,
+    "lat": 40.4433165
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4433165
+   },
+   {
+    "lng": -79.9445938,
+    "lat": 40.4431245
+   }
+  ],
+  "dataStatus": "Synthetic"
+ }
+]

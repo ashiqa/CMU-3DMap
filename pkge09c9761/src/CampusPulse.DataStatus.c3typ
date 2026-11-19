@@ -1,0 +1,14 @@
+/**
+ * Provenance of a campus record. Every building, pin, zone, and nav element carries one so the UI can label
+ * invented demo content distinctly from facts checked against a real source.
+ */
+enum type CampusPulse.DataStatus {
+  /**
+   * Checked against a real source: a CMU Maps footprint, a published campus fact, or a confirmed location.
+   */
+  VERIFIED = 'Verified'
+  /**
+   * Invented for the prototype. The UI shows it with a visible "Demo data" label.
+   */
+  SYNTHETIC = 'Synthetic'
+}

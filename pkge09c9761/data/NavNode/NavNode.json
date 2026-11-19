@@ -1,0 +1,761 @@
+[
+ {
+  "id": "nn_j_fence",
+  "lng": -79.9438,
+  "lat": 40.44285,
+  "kind": "Landmark",
+  "dataStatus": "Synthetic",
+  "label": "The Fence",
+  "zone": "zone_cut"
+ },
+ {
+  "id": "nn_j_mall_e",
+  "lng": -79.944,
+  "lat": 40.44215,
+  "kind": "Outdoor",
+  "dataStatus": "Synthetic",
+  "label": "Mall east",
+  "zone": "zone_mall"
+ },
+ {
+  "id": "nn_j_mall_c",
+  "lng": -79.945,
+  "lat": 40.44205,
+  "kind": "Outdoor",
+  "dataStatus": "Synthetic",
+  "label": "The Mall",
+  "zone": "zone_mall"
+ },
+ {
+  "id": "nn_j_mall_w",
+  "lng": -79.9461,
+  "lat": 40.4421,
+  "kind": "Outdoor",
+  "dataStatus": "Synthetic",
+  "label": "Mall west",
+  "zone": "zone_mall"
+ },
+ {
+  "id": "nn_j_hh_plaza",
+  "lng": -79.9469,
+  "lat": 40.44225,
+  "kind": "Outdoor",
+  "dataStatus": "Synthetic",
+  "label": "Hamerschlag plaza",
+  "zone": "zone_mall"
+ },
+ {
+  "id": "nn_j_cut_mid",
+  "lng": -79.944,
+  "lat": 40.4433,
+  "kind": "Landmark",
+  "dataStatus": "Synthetic",
+  "label": "The Cut",
+  "zone": "zone_cut"
+ },
+ {
+  "id": "nn_j_cut_n",
+  "lng": -79.9438,
+  "lat": 40.444,
+  "kind": "Outdoor",
+  "dataStatus": "Synthetic",
+  "label": "Forbes & the Cut",
+  "zone": "zone_cut"
+ },
+ {
+  "id": "nn_j_forbes_tep",
+  "lng": -79.945,
+  "lat": 40.44455,
+  "kind": "Outdoor",
+  "dataStatus": "Synthetic",
+  "label": "Forbes Ave crossing"
+ },
+ {
+  "id": "nn_j_ghc_n_plaza",
+  "lng": -79.9447,
+  "lat": 40.4441,
+  "kind": "Outdoor",
+  "dataStatus": "Synthetic",
+  "label": "Gates north plaza"
+ },
+ {
+  "id": "nn_j_cuc_w",
+  "lng": -79.9429,
+  "lat": 40.4434,
+  "kind": "Outdoor",
+  "dataStatus": "Synthetic",
+  "label": "CUC west plaza",
+  "zone": "zone_cut"
+ },
+ {
+  "id": "nn_j_cfa_front",
+  "lng": -79.943,
+  "lat": 40.44195,
+  "kind": "Outdoor",
+  "dataStatus": "Synthetic",
+  "label": "CFA front steps",
+  "zone": "zone_mall"
+ },
+ {
+  "id": "nn_j_posner_path",
+  "lng": -79.942,
+  "lat": 40.4419,
+  "kind": "Outdoor",
+  "dataStatus": "Synthetic",
+  "label": "Posner / Margaret Morrison path"
+ },
+ {
+  "id": "nn_j_weh_dh_n",
+  "lng": -79.945,
+  "lat": 40.443,
+  "kind": "Outdoor",
+  "dataStatus": "Synthetic",
+  "label": "Wean\u2013Doherty north walkway",
+  "zone": "zone_cut"
+ },
+ {
+  "id": "nn_j_nsh_w",
+  "lng": -79.9462,
+  "lat": 40.443,
+  "kind": "Outdoor",
+  "dataStatus": "Synthetic",
+  "label": "Newell-Simon west walk"
+ },
+ {
+  "id": "nn_j_hbh_plaza",
+  "lng": -79.9458,
+  "lat": 40.4438,
+  "kind": "Outdoor",
+  "dataStatus": "Synthetic",
+  "label": "Hamburg / Newell-Simon plaza"
+ },
+ {
+  "id": "nn_door_DH_50",
+  "lng": -79.9444955,
+  "lat": 40.442162,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Doherty Mall entrance",
+  "building": "bldg_DH",
+  "zone": "zone_doherty"
+ },
+ {
+  "id": "nn_door_DH_910",
+  "lng": -79.9439935,
+  "lat": 40.4428733,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Doherty Cut entrance",
+  "building": "bldg_DH",
+  "zone": "zone_doherty"
+ },
+ {
+  "id": "nn_door_BH_510",
+  "lng": -79.9450187,
+  "lat": 40.4418943,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Baker Hall Mall entrance",
+  "building": "bldg_BH",
+  "zone": "zone_baker"
+ },
+ {
+  "id": "nn_door_PH_510",
+  "lng": -79.946361,
+  "lat": 40.4420839,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Porter Hall Mall entrance",
+  "building": "bldg_PH",
+  "zone": "zone_baker"
+ },
+ {
+  "id": "nn_door_NSH_510",
+  "lng": -79.9457249,
+  "lat": 40.4436155,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Newell-Simon north entrance",
+  "building": "bldg_NSH",
+  "zone": "zone_nsh",
+  "floor": "1"
+ },
+ {
+  "id": "nn_door_NSH_05",
+  "lng": -79.946011,
+  "lat": 40.443539,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Newell-Simon west entrance",
+  "building": "bldg_NSH",
+  "zone": "zone_nsh",
+  "floor": "1"
+ },
+ {
+  "id": "nn_door_CUC_04",
+  "lng": -79.9427601,
+  "lat": 40.4434244,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Cohon Center west entrance",
+  "building": "bldg_CUC",
+  "zone": "zone_cuc"
+ },
+ {
+  "id": "nn_door_PCA_05",
+  "lng": -79.9439564,
+  "lat": 40.4435322,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Purnell Cut entrance",
+  "building": "bldg_PCA",
+  "zone": "zone_purnell"
+ },
+ {
+  "id": "nn_door_CFA_510",
+  "lng": -79.9429117,
+  "lat": 40.4419556,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "CFA main entrance",
+  "building": "bldg_CFA",
+  "zone": "zone_cfa"
+ },
+ {
+  "id": "nn_door_HH_105",
+  "lng": -79.9462926,
+  "lat": 40.4424119,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Hamerschlag Mall entrance",
+  "building": "bldg_HH",
+  "zone": "zone_hamerschlag"
+ },
+ {
+  "id": "nn_door_TEP_50",
+  "lng": -79.945369,
+  "lat": 40.4446665,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Tepper south entrance",
+  "building": "bldg_TEP",
+  "zone": "zone_tepper"
+ },
+ {
+  "id": "nn_door_POS_510",
+  "lng": -79.9421442,
+  "lat": 40.4416182,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Posner Hall entrance",
+  "building": "bldg_POS",
+  "zone": "zone_posner"
+ },
+ {
+  "id": "nn_door_MM_05",
+  "lng": -79.941827,
+  "lat": 40.4422297,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Margaret Morrison entrance",
+  "building": "bldg_MM"
+ },
+ {
+  "id": "nn_door_HBH_50",
+  "lng": -79.945548,
+  "lat": 40.4438586,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Hamburg Hall south entrance",
+  "building": "bldg_HBH"
+ },
+ {
+  "id": "nn_door_WH_50",
+  "lng": -79.9433907,
+  "lat": 40.4440147,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Warner Hall entrance",
+  "building": "bldg_WH"
+ },
+ {
+  "id": "nn_door_CYH_50",
+  "lng": -79.9439766,
+  "lat": 40.4440312,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Cyert Hall entrance",
+  "building": "bldg_CYH"
+ },
+ {
+  "id": "nn_door_SC_105",
+  "lng": -79.9464263,
+  "lat": 40.4429642,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Scott Hall east entrance",
+  "building": "bldg_SC"
+ },
+ {
+  "id": "nn_door_HL_N",
+  "lng": -79.9438148,
+  "lat": 40.4412832,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Hunt Library north entrance",
+  "building": "bldg_HL",
+  "floor": "1",
+  "zone": "zone_hunt"
+ },
+ {
+  "id": "nn_door_WEH_S",
+  "lng": -79.9460022,
+  "lat": 40.442609,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Wean Hall Mall entrance",
+  "building": "bldg_WEH",
+  "floor": "5",
+  "zone": "zone_wean"
+ },
+ {
+  "id": "nn_door_WEH_N",
+  "lng": -79.9457782,
+  "lat": 40.4428278,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Wean Hall north entrance",
+  "building": "bldg_WEH",
+  "floor": "5",
+  "zone": "zone_wean"
+ },
+ {
+  "id": "nn_door_WEH_W",
+  "lng": -79.9465496,
+  "lat": 40.4427264,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Wean Hall west entrance",
+  "building": "bldg_WEH",
+  "floor": "5",
+  "zone": "zone_wean"
+ },
+ {
+  "id": "nn_GHC_4_lobby",
+  "lng": -79.9443492,
+  "lat": 40.4435086,
+  "kind": "Room",
+  "dataStatus": "Synthetic",
+  "label": "Lobby 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_c_lobby",
+  "lng": -79.9446507,
+  "lat": 40.4435086,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_elev",
+  "lng": -79.9447417,
+  "lat": 40.4435566,
+  "kind": "Elevator",
+  "dataStatus": "Synthetic",
+  "label": "Elevator",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_c_elev",
+  "lng": -79.9446507,
+  "lat": 40.4435566,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_stairs",
+  "lng": -79.9445597,
+  "lat": 40.4437198,
+  "kind": "Stairs",
+  "dataStatus": "Synthetic",
+  "label": "Stairs",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_c_stairs",
+  "lng": -79.9446507,
+  "lat": 40.4437198,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_helix",
+  "lng": -79.9448327,
+  "lat": 40.4435566,
+  "kind": "Elevator",
+  "dataStatus": "Synthetic",
+  "label": "Helix ramp",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_c_helix",
+  "lng": -79.9446507,
+  "lat": 40.4435566,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_commons",
+  "lng": -79.9449351,
+  "lat": 40.4438783,
+  "kind": "Room",
+  "dataStatus": "Synthetic",
+  "label": "Collaborative commons 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_c_commons",
+  "lng": -79.9446507,
+  "lat": 40.4438783,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_rr",
+  "lng": -79.9445199,
+  "lat": 40.4438927,
+  "kind": "Room",
+  "dataStatus": "Synthetic",
+  "label": "Restroom 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_c_rr",
+  "lng": -79.9446507,
+  "lat": 40.4438927,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_cafe",
+  "lng": -79.944281,
+  "lat": 40.4438927,
+  "kind": "Room",
+  "dataStatus": "Synthetic",
+  "label": "Caf\u00e9 4F (demo)",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_c_cafe",
+  "lng": -79.9446507,
+  "lat": 40.4438927,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_lecture",
+  "lng": -79.9449351,
+  "lat": 40.4432349,
+  "kind": "Room",
+  "dataStatus": "Synthetic",
+  "label": "Gates 4F Lecture Hall",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_c_lecture",
+  "lng": -79.9446507,
+  "lat": 40.4432349,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_print",
+  "lng": -79.9445369,
+  "lat": 40.4432205,
+  "kind": "Room",
+  "dataStatus": "Synthetic",
+  "label": "Cluster printer 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_c_print",
+  "lng": -79.9446507,
+  "lat": 40.4432205,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_door_GHC_E",
+  "lng": -79.9440819,
+  "lat": 40.4435086,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers Cut / Pausch Bridge entrance",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_c_doorE",
+  "lng": -79.9446507,
+  "lat": 40.4435086,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_door_GHC_N",
+  "lng": -79.9446507,
+  "lat": 40.4440367,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers Forbes entrance",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_c_doorN",
+  "lng": -79.9446507,
+  "lat": 40.4439407,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_door_GHC_S",
+  "lng": -79.9446507,
+  "lat": 40.4430765,
+  "kind": "Door",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers south entrance (toward Wean)",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_4_c_doorS",
+  "lng": -79.9446507,
+  "lat": 40.4431725,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 4F",
+  "building": "bldg_GHC",
+  "floor": "4",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_5_clsA",
+  "lng": -79.9450204,
+  "lat": 40.4438783,
+  "kind": "Room",
+  "dataStatus": "Synthetic",
+  "label": "Gates 5F Classroom A",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_5_c_clsA",
+  "lng": -79.9446507,
+  "lat": 40.4438783,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 5F",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_5_clsB",
+  "lng": -79.9450204,
+  "lat": 40.4432349,
+  "kind": "Room",
+  "dataStatus": "Synthetic",
+  "label": "Gates 5F Classroom B",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_5_c_clsB",
+  "lng": -79.9446507,
+  "lat": 40.4432349,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 5F",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_5_elev",
+  "lng": -79.9447417,
+  "lat": 40.4435566,
+  "kind": "Elevator",
+  "dataStatus": "Synthetic",
+  "label": "Elevator",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_5_c_elev",
+  "lng": -79.9446507,
+  "lat": 40.4435566,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 5F",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_5_stairs",
+  "lng": -79.9445597,
+  "lat": 40.4437198,
+  "kind": "Stairs",
+  "dataStatus": "Synthetic",
+  "label": "Stairs",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_5_c_stairs",
+  "lng": -79.9446507,
+  "lat": 40.4437198,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 5F",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_5_helix",
+  "lng": -79.9448327,
+  "lat": 40.4435566,
+  "kind": "Elevator",
+  "dataStatus": "Synthetic",
+  "label": "Helix ramp",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_5_c_helix",
+  "lng": -79.9446507,
+  "lat": 40.4435566,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 5F",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_5_rr",
+  "lng": -79.9445199,
+  "lat": 40.4438927,
+  "kind": "Room",
+  "dataStatus": "Synthetic",
+  "label": "Restroom 5F",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_5_c_rr",
+  "lng": -79.9446507,
+  "lat": 40.4438927,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 5F",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_5_lounge",
+  "lng": -79.9443663,
+  "lat": 40.4435086,
+  "kind": "Room",
+  "dataStatus": "Synthetic",
+  "label": "Gates 5F Lounge",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "zone": "zone_gates"
+ },
+ {
+  "id": "nn_GHC_5_c_lounge",
+  "lng": -79.9446507,
+  "lat": 40.4435086,
+  "kind": "Corridor",
+  "dataStatus": "Synthetic",
+  "label": "Gates & Hillman Centers corridor 5F",
+  "building": "bldg_GHC",
+  "floor": "5",
+  "zone": "zone_gates"
+ }
+]

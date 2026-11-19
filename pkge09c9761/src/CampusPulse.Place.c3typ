@@ -1,0 +1,29 @@
+/**
+ * A resolved place reference from free text.
+ */
+type CampusPulse.Place {
+  /**
+   * The building that matched.
+   */
+  building: CampusBuilding
+  /**
+   * Floor label parsed from the text, when any.
+   */
+  floor: string
+  /**
+   * The room that matched, when the text names one (e.g. "Rangos Ballroom", "McConomy Auditorium").
+   */
+  room: CampusBuilding.Room
+  /**
+   * Nearest nav node for routing: an indoor node on that floor when the floor is known, else a door.
+   */
+  node: NavNode
+  /**
+   * Crowd zone for the building (and floor when one is modelled).
+   */
+  zone: CrowdZone
+  /**
+   * Text that matched, e.g. "hunt library".
+   */
+  matchedText: string
+}

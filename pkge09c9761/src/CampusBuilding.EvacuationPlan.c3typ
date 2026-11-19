@@ -1,0 +1,38 @@
+/**
+ * Result of the evacuation-planning sandbox for one building: the synthetic occupant clusters, a nearest-exit
+ * baseline run, and a capacity-aware optimized run on identical conditions. Reproducible from `seed`.
+ */
+type CampusBuilding.EvacuationPlan {
+  /**
+   * Building the plan was computed for.
+   */
+  building: CampusBuilding
+  /**
+   * Total synthetic occupants distributed across {@link CampusBuilding.EvacuationPlan#clusters}.
+   */
+  occupants: int
+  /**
+   * Seed used to place the clusters.
+   */
+  seed: int
+  /**
+   * Every cluster goes to its nearest exit regardless of load.
+   */
+  baseline: CampusBuilding.EvacuationPlan.Run
+  /**
+   * Clusters are reassigned iteratively to shave the busiest exit's clearance time.
+   */
+  optimized: CampusBuilding.EvacuationPlan.Run
+  /**
+   * Percent reduction of clearance time from baseline to optimized (0 when the optimizer found nothing to move).
+   */
+  improvementPct: double
+  /**
+   * Fixed safety statement the UI must display with the plan.
+   */
+  disclaimer: string
+  /**
+   * Synthetic occupant groups placed inside the footprint.
+   */
+  clusters: [CampusBuilding.EvacuationPlan.Cluster]
+}
